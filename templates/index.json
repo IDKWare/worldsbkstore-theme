@@ -39,7 +39,6 @@
       ],
       "disabled": true,
       "settings": {
-        "image": "shopify:\/\/shop_images\/BMW-FlashSales-1200x600px_bb99b173-67e5-4c38-a758-3e969451b1e8.png",
         "image_overlay_opacity": 0,
         "image_height": "large",
         "desktop_content_position": "middle-center",
@@ -73,7 +72,6 @@
         "slide_GPkWdT": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/DM_CatSBK_poster_1200x600_1dcfed07-1fa0-4095-b47d-763aef38ea75.png",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
@@ -92,7 +90,6 @@
           "type": "slide",
           "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/DM_DuthRound_1200x600_fb737c9e-a23f-4aa7-b53c-8a3b571eb2af.png",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
@@ -111,7 +108,6 @@
           "type": "slide",
           "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/Banner-caps-worldsbk.jpg",
             "heading": "<strong>WORLDSBK CAPS<\/strong>",
             "heading_size": "h1",
             "subheading": "",
@@ -130,7 +126,6 @@
           "type": "slide",
           "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/KRT_New_collection.jpg",
             "heading": "KRT 2024 NEW COLLECTION",
             "heading_size": "h1",
             "subheading": "Get the official Kawasaki Racing Team 2024 collection and prepare your merch for the return of WorldSBK!",
@@ -149,7 +144,6 @@
           "type": "slide",
           "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/YEARBOOK_1200x600px.png",
             "heading": "<strong>OFFICIAL YEARBOOK<\/strong>",
             "heading_size": "h1",
             "subheading": "An incredible summary of the 2022 season, with the best photography and all the data.",
@@ -251,6 +245,12 @@
           "settings": {
             "collection": "sunglasses"
           }
+        },
+        "featured_collection_hJ3JHL": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
         }
       },
       "block_order": [
@@ -258,13 +258,14 @@
         "template--18531747987798__cabef38c-02f0-41fb-a0c9-9d4cdcf882ed-168615178717c4af0e-1",
         "f47ac93e-6c5f-48f9-a872-c1f1005e92cf",
         "82f66636-0c14-474a-b321-c4223974a0a4",
-        "featured_collection_bAeak3"
+        "featured_collection_bAeak3",
+        "featured_collection_hJ3JHL"
       ],
       "settings": {
         "title": "",
         "heading_size": "h1",
         "image_ratio": "square",
-        "columns_desktop": 5,
+        "columns_desktop": 6,
         "color_scheme": "background-1",
         "show_view_all": false,
         "columns_mobile": "2",
@@ -518,7 +519,6 @@
         "f3e0930b-6800-4a8a-96c7-83255a140b24": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/COLLECTIONS_PIANO.png",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
@@ -555,19 +555,16 @@
         "template--18531747987798__f2228001-711c-4ccb-a8f7-9997897ba889-1686217739e73fef01-0": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/BAU_tshirt_cap_demon.jpg"
           }
         },
         "d7572ec8-5214-4044-a871-4a42ee3cac7f": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/MV5_6058.jpg"
           }
         },
         "3834909b-0943-4590-b2ec-df11c99c6fa8": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/REA_Dream.jpg"
           }
         }
       },
@@ -593,7 +590,6 @@
         "template--19103624921430__f5a8bed4-d004-4384-9824-e92eefbd0bc2-1688556255faaa3682-0": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/TEAMS_MOTOS.png",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
