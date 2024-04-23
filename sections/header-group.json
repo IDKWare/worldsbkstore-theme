@@ -11,7 +11,7 @@
       ],
       "settings": {
         "logo_position": "top-center",
-        "menu": "main-menu",
+        "menu": "2023-dawn-v9",
         "menu_type_desktop": "dropdown",
         "sticky_header_type": "on-scroll-up",
         "show_line_separator": true,
@@ -54,7 +54,7 @@
         "79d05997-97a8-4d37-92e1-ea4233bba579": {
           "type": "announcement",
           "settings": {
-            "text": "FLASH SALE 💥 25% OFF with the code FLASH11/11",
+            "text": "FLASH SALE 💥 25% OFF with the code FLASH11\/11",
             "link": ""
           }
         }
