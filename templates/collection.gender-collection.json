@@ -1,0 +1,106 @@
+{
+  "sections": {
+    "70f0ca97-b726-4a57-92cf-6f7c344119df": {
+      "type": "featured-product",
+      "blocks": {
+        "template--19103624888662__70f0ca97-b726-4a57-92cf-6f7c344119df-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "template--19103624888662__70f0ca97-b726-4a57-92cf-6f7c344119df-title-1": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "template--19103624888662__70f0ca97-b726-4a57-92cf-6f7c344119df-price-1": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "template--19103624888662__70f0ca97-b726-4a57-92cf-6f7c344119df-variant_picker-1": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "template--19103624888662__70f0ca97-b726-4a57-92cf-6f7c344119df-quantity_selector-1": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "template--19103624888662__70f0ca97-b726-4a57-92cf-6f7c344119df-buy_buttons-1": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "template--19103624888662__70f0ca97-b726-4a57-92cf-6f7c344119df-share-1": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "template--19103624888662__70f0ca97-b726-4a57-92cf-6f7c344119df-text-1",
+        "template--19103624888662__70f0ca97-b726-4a57-92cf-6f7c344119df-title-1",
+        "template--19103624888662__70f0ca97-b726-4a57-92cf-6f7c344119df-price-1",
+        "template--19103624888662__70f0ca97-b726-4a57-92cf-6f7c344119df-variant_picker-1",
+        "template--19103624888662__70f0ca97-b726-4a57-92cf-6f7c344119df-quantity_selector-1",
+        "template--19103624888662__70f0ca97-b726-4a57-92cf-6f7c344119df-buy_buttons-1",
+        "template--19103624888662__70f0ca97-b726-4a57-92cf-6f7c344119df-share-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "product": "worldsbk-yearbook-2023",
+        "color_scheme": "",
+        "secondary_background": false,
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "products_per_page": 16,
+        "columns_desktop": 3,
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": true,
+        "enable_filtering": true,
+        "filter_type": "vertical",
+        "enable_sorting": true,
+        "columns_mobile": "1",
+        "padding_top": 48,
+        "padding_bottom": 48
+      }
+    },
+    "banner": {
+      "type": "main-collection-banner",
+      "settings": {
+        "show_collection_description": true,
+        "show_collection_image": true,
+        "color_scheme": "background-2"
+      }
+    }
+  },
+  "order": [
+    "70f0ca97-b726-4a57-92cf-6f7c344119df",
+    "product-grid",
+    "banner"
+  ]
+}
