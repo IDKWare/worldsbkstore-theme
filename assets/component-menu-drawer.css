@@ -265,7 +265,7 @@ details[open].menu-opening > .menu-drawer__submenu {
   padding: 1.3rem 1.25rem;
 }
 
-#HeaderDrawer-riders-all-riders, #HeaderDrawer-teams-all-teams {
+#HeaderDrawer-riders-view-all, #HeaderDrawer-teams-view-all {
   font-style: italic;
   color: rgb(var(--color-link)) !important;
   font-size: 1.48rem;
