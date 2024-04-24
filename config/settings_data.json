@@ -1,8 +1,8 @@
 {
   "current": {
-    "logo": "shopify://shop_images/SBK_Official_Store-Logo_Landscape_RGB_OnLight_margins.png",
+    "logo": "shopify:\/\/shop_images\/SBK_Official_Store-Logo_Landscape_RGB_OnLight_margins.png",
     "logo_width": 300,
-    "favicon": "shopify://shop_images/SBK_favicon.png",
+    "favicon": "shopify:\/\/shop_images\/SBK_favicon.png",
     "type_header_font": "maven_pro_n4",
     "heading_scale": 100,
     "type_body_font": "maven_pro_n4",
@@ -99,7 +99,7 @@
     "sale_badge_color_scheme": "accent-2",
     "sold_out_badge_color_scheme": "inverse",
     "brand_headline": "",
-    "brand_description": "<p></p>",
+    "brand_description": "<p><\/p>",
     "brand_image_width": 100,
     "social_facebook_link": "",
     "social_instagram_link": "",
@@ -135,6 +135,21 @@
     "content_for_index": [
 
     ],
+    "blocks": {
+      "5134484470793087125": {
+        "type": "shopify:\/\/apps\/vitals\/blocks\/app-embed\/aeb48102-2a5a-4f39-bdbd-d8d49f4e20b8",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "4571859552318407796": {
+        "type": "shopify:\/\/apps\/glo-color-swatch\/blocks\/app-embed-block\/4394f710-096c-4021-bbde-8ebb26057c11",
+        "disabled": false,
+        "settings": {
+          "customCssGCW": ""
+        }
+      }
+    },
     "color_schemes": {
       "background-1": {
         "settings": {
@@ -360,7 +375,7 @@
       "sale_badge_color_scheme": "accent-2",
       "sold_out_badge_color_scheme": "inverse",
       "brand_headline": "",
-      "brand_description": "<p></p>",
+      "brand_description": "<p><\/p>",
       "brand_image_width": 100,
       "social_twitter_link": "",
       "social_facebook_link": "",
