@@ -72,8 +72,27 @@
       "blocks": {
         "slide_GPkWdT": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/DM_Aruba_Ducati_1200x600_6153c154-8965-4e38-aefb-2a5fee701600.png",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "background-1",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_qLPQgL": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/DM_Limited_sneakers_1200x600_b9a9c51b-37cf-41d3-9f65-c6f2c36923b8.png",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
@@ -144,33 +163,14 @@
             "color_scheme": "inverse",
             "text_alignment_mobile": "center"
           }
-        },
-        "template--18531747987798__df682f7c-16f8-491e-866a-780b262c39cb-16811988444de316b9-0": {
-          "type": "slide",
-          "disabled": true,
-          "settings": {
-            "image": "shopify:\/\/shop_images\/YEARBOOK_1200x600px.png",
-            "heading": "<strong>OFFICIAL YEARBOOK<\/strong>",
-            "heading_size": "h1",
-            "subheading": "An incredible summary of the 2022 season, with the best photography and all the data.",
-            "button_label": "GO! GO! GO! >>",
-            "link": "shopify:\/\/products\/sbk-official-yearbook",
-            "button_style_secondary": true,
-            "box_align": "middle-center",
-            "show_text_box": false,
-            "text_alignment": "center",
-            "image_overlay_opacity": 60,
-            "color_scheme": "inverse",
-            "text_alignment_mobile": "center"
-          }
         }
       },
       "block_order": [
         "slide_GPkWdT",
+        "slide_qLPQgL",
         "slide_E6ipkM",
         "9499e6ca-576f-4aa5-979b-8adba7ba22c1",
-        "slide_RM7JLw",
-        "template--18531747987798__df682f7c-16f8-491e-866a-780b262c39cb-16811988444de316b9-0"
+        "slide_RM7JLw"
       ],
       "settings": {
         "layout": "grid",
@@ -358,7 +358,7 @@
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "aruba-it-racing-ducati-superbike-team",
+        "collection": "sbk-limited-edition",
         "products_to_show": 3,
         "columns_desktop": 3,
         "full_width": false,
