@@ -275,6 +275,7 @@
       "taxes_included_but_shipping_at_checkout": "Vergi dahildir ve kargo, ödeme sayfasında hesaplanır",
       "taxes_included_and_shipping_policy_html": "Vergi dahildir. <a href=\"{{ link }}\">Kargo</a>, ödeme sayfasında hesaplanır.",
       "taxes_and_shipping_at_checkout": "Vergiler ve kargo, ödeme sayfasında hesaplanır",
+      "duties_text": "Gümrük vergileri hiçbir zaman çıkış fiyatına dahil değildir.\n",
       "headings": {
         "product": "Ürün",
         "price": "Fiyat",
