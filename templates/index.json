@@ -152,6 +152,42 @@
         "accessibility_info": ""
       }
     },
+    "5d6c961d-f1f9-4a16-a93c-a8a1ee56897f": {
+      "type": "rich-text",
+      "blocks": {
+        "template--18531747987798__5d6c961d-f1f9-4a16-a93c-a8a1ee56897f-1686731341420ac5c2-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Get your summer pack!<\/strong>",
+            "heading_size": "h1"
+          }
+        },
+        "template--18531747987798__5d6c961d-f1f9-4a16-a93c-a8a1ee56897f-1686731341420ac5c2-2": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--18531747987798__5d6c961d-f1f9-4a16-a93c-a8a1ee56897f-1686731341420ac5c2-0",
+        "template--18531747987798__5d6c961d-f1f9-4a16-a93c-a8a1ee56897f-1686731341420ac5c2-2"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 32,
+        "padding_bottom": 0
+      }
+    },
     "featured_collection_WkyYPC": {
       "type": "featured-collection",
       "settings": {
@@ -176,21 +212,21 @@
         "enable_quick_add": false,
         "columns_mobile": "2",
         "swipe_on_mobile": false,
-        "padding_top": 36,
+        "padding_top": 0,
         "padding_bottom": 36
       }
     },
-    "5d6c961d-f1f9-4a16-a93c-a8a1ee56897f": {
+    "rich_text_Q6fB77": {
       "type": "rich-text",
       "blocks": {
-        "template--18531747987798__5d6c961d-f1f9-4a16-a93c-a8a1ee56897f-1686731341420ac5c2-0": {
+        "heading_kDm9XV": {
           "type": "heading",
           "settings": {
             "heading": "<strong>Find your style<\/strong>",
             "heading_size": "h1"
           }
         },
-        "template--18531747987798__5d6c961d-f1f9-4a16-a93c-a8a1ee56897f-1686731341420ac5c2-2": {
+        "button_XfbDcW": {
           "type": "button",
           "disabled": true,
           "settings": {
@@ -204,8 +240,8 @@
         }
       },
       "block_order": [
-        "template--18531747987798__5d6c961d-f1f9-4a16-a93c-a8a1ee56897f-1686731341420ac5c2-0",
-        "template--18531747987798__5d6c961d-f1f9-4a16-a93c-a8a1ee56897f-1686731341420ac5c2-2"
+        "heading_kDm9XV",
+        "button_XfbDcW"
       ],
       "settings": {
         "desktop_content_position": "center",
@@ -745,8 +781,9 @@
     "52dd3353-370e-4164-a215-1b04a7bae97f",
     "cb010894-707f-4e68-9564-ce5bc1c0d3b7",
     "df682f7c-16f8-491e-866a-780b262c39cb",
-    "featured_collection_WkyYPC",
     "5d6c961d-f1f9-4a16-a93c-a8a1ee56897f",
+    "featured_collection_WkyYPC",
+    "rich_text_Q6fB77",
     "cabef38c-02f0-41fb-a0c9-9d4cdcf882ed",
     "dc0e5d0c-08f7-4f15-851c-2c625c23bee2",
     "featured_collection_ypghmy",
