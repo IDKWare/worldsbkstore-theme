@@ -581,7 +581,7 @@
         "heading_size": "h2",
         "desktop_layout": "right",
         "mobile_layout": "collage",
-        "card_styles": "product-card-wrapper",
+        "card_styles": "none",
         "color_scheme": "background-1",
         "padding_top": 40,
         "padding_bottom": 52
