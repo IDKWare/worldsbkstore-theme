@@ -505,18 +505,21 @@
         },
         "featured_collection_MBL7Vc": {
           "type": "featured_collection",
+          "disabled": true,
           "settings": {
             "collection": "axel-bassani"
           }
         },
         "featured_collection_MnHCXx": {
           "type": "featured_collection",
+          "disabled": true,
           "settings": {
             "collection": "alex-lowes"
           }
         },
         "featured_collection_xF9RED": {
           "type": "featured_collection",
+          "disabled": true,
           "settings": {
             "collection": "andrea-locatelli"
           }
