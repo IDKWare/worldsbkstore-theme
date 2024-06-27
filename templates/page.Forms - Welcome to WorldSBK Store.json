@@ -53,15 +53,6 @@
         "accessibility_info": ""
       }
     },
-    "custom_liquid_fCGwGq": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "",
-        "color_scheme": "",
-        "padding_top": 0,
-        "padding_bottom": 28
-      }
-    },
     "forms": {
       "type": "apps",
       "blocks": {
@@ -103,7 +94,6 @@
   "order": [
     "8bfc479a-9e79-43a7-ad7d-e739ce5502f8",
     "slideshow_iBmCct",
-    "custom_liquid_fCGwGq",
     "forms",
     "custom_liquid_FUPDar"
   ]
