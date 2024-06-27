@@ -502,12 +502,33 @@
           "settings": {
             "collection": "jonathan-rea"
           }
+        },
+        "featured_collection_MBL7Vc": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "axel-bassani"
+          }
+        },
+        "featured_collection_MnHCXx": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "alex-lowes"
+          }
+        },
+        "featured_collection_xF9RED": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "andrea-locatelli"
+          }
         }
       },
       "block_order": [
         "template--18531747987798__aee8d7cb-e57a-4528-b8c5-33bbf7700f90-168415577489fdb773-1",
         "template--18531747987798__aee8d7cb-e57a-4528-b8c5-33bbf7700f90-168415577489fdb773-0",
-        "template--18531747987798__aee8d7cb-e57a-4528-b8c5-33bbf7700f90-168415577489fdb773-2"
+        "template--18531747987798__aee8d7cb-e57a-4528-b8c5-33bbf7700f90-168415577489fdb773-2",
+        "featured_collection_MBL7Vc",
+        "featured_collection_MnHCXx",
+        "featured_collection_xF9RED"
       ],
       "settings": {
         "title": "",
