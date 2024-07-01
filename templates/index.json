@@ -100,6 +100,7 @@
         },
         "slide_ArKFDC": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/Banner_Summer_pack_1200x600px.png",
             "heading": "",
@@ -229,6 +230,7 @@
     },
     "featured_collection_WkyYPC": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "title": "",
         "heading_size": "h1",
