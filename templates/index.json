@@ -119,7 +119,6 @@
         },
         "slide_qLPQgL": {
           "type": "slide",
-          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/663c770ca54c0f0e4d55ff2d_0e878817-f04c-4e36-bad4-6acea3c4b68f.jpg",
             "heading": "",
@@ -138,6 +137,7 @@
         },
         "slide_BaBW4g": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/Banner_Riders_30_1200x600px_a8bb4544-f12c-46e1-9dbd-871c90738a2f.gif",
             "heading": "",
