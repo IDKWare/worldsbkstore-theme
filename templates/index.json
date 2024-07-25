@@ -81,9 +81,8 @@
       "blocks": {
         "slide_GPkWdT": {
           "type": "slide",
-          "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/DM_Aruba_Ducati_1200x600_6153c154-8965-4e38-aefb-2a5fee701600.png",
+            "image": "shopify:\/\/shop_images\/Banner_SALES_HUNTER_1200x600px.gif",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
@@ -119,6 +118,7 @@
         },
         "slide_qLPQgL": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/663c770ca54c0f0e4d55ff2d_0e878817-f04c-4e36-bad4-6acea3c4b68f.jpg",
             "heading": "",
