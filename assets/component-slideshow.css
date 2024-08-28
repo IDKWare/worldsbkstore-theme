@@ -7,7 +7,7 @@ slideshow-component {
 slideshow-component .slideshow.banner {
   flex-direction: row;
   flex-wrap: nowrap;
-  margin: 0;
+  margin: 26px 0 0;
   gap: 0;
   overflow-y: hidden;
 }
