@@ -2768,6 +2768,17 @@ details[open] > .header__submenu {
   color: rgba(var(--color-foreground), 0.75);
 }
 
+.header__menu-item[id*="-view-all"] {
+  font-style: italic;
+  color: rgb(var(--color-link)) !important;
+  font-size: 1.48rem;
+  justify-content: start !important;
+}
+
+.header__menu-item[id*="-view-all"]:before {
+  content: '→ \00a0';
+}
+
 .header__menu-item:hover {
   color: rgb(var(--color-foreground));
 }
