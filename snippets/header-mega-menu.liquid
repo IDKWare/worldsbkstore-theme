@@ -16,7 +16,6 @@
                 id="HeaderMenu-{{ link.handle }}"
                 class="header__menu-item list-menu__item link focus-inset"
               >
-              <a href="{{ link.url  }}">
                 <span
                   {%- if link.child_active %}
                     class="header__active-menu-item"
@@ -24,12 +23,11 @@
                 >
                   {{- link.title | escape -}}
                 </span>
-                </a>
                 {% render 'icon-caret' %}
               </summary>
               <div
                 id="MegaMenu-Content-{{ forloop.index }}"
-                class="mega-menu__content gradient motion-reduce global-settings-popup"
+                class="mega-menu__content color-{{ section.settings.menu_color_scheme }} gradient motion-reduce global-settings-popup"
                 tabindex="-1"
               >
                 <ul
