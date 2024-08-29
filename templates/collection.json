@@ -18,8 +18,7 @@
         },
         "template--19103624888662__70f0ca97-b726-4a57-92cf-6f7c344119df-price-1": {
           "type": "price",
-          "settings": {
-          }
+          "settings": {}
         },
         "template--19103624888662__70f0ca97-b726-4a57-92cf-6f7c344119df-variant_picker-1": {
           "type": "variant_picker",
@@ -29,8 +28,7 @@
         },
         "template--19103624888662__70f0ca97-b726-4a57-92cf-6f7c344119df-quantity_selector-1": {
           "type": "quantity_selector",
-          "settings": {
-          }
+          "settings": {}
         },
         "template--19103624888662__70f0ca97-b726-4a57-92cf-6f7c344119df-buy_buttons-1": {
           "type": "buy_buttons",
