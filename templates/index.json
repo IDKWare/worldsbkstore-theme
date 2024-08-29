@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "52dd3353-370e-4164-a215-1b04a7bae97f": {
@@ -92,7 +101,7 @@
         "slide_qLPQgL": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/DM_Limited_sneakers_1200x600_b9a9c51b-37cf-41d3-9f65-c6f2c36923b8.png",
+            "image": "shopify:\/\/shop_images\/Banner_caps_1200x600px_d3a95011-986c-4f86-a030-c91c76d6d4c0.gif",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
