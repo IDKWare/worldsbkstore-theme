@@ -104,6 +104,17 @@ details[open].menu-opening > .menu-drawer__submenu {
   font-size: 1.8rem;
 }
 
+.menu-drawer__menu-item[id*="-view-all"] {
+  font-style: italic;
+  color: rgb(var(--color-link)) !important;
+  font-size: 1.48rem;
+  justify-content: start !important;
+}
+
+.menu-drawer__menu-item[id*="-view-all"]:before {
+  content: '→ \00a0';
+}
+
 .menu-drawer summary.menu-drawer__menu-item {
   padding-right: 5.2rem;
 }
