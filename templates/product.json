@@ -12,8 +12,7 @@
         },
         "title": {
           "type": "title",
-          "settings": {
-          }
+          "settings": {}
         },
         "9c15ac26-9f7c-4bad-aa8a-33b183622b7a": {
           "type": "text",
@@ -24,8 +23,7 @@
         },
         "price": {
           "type": "price",
-          "settings": {
-          }
+          "settings": {}
         },
         "variant_picker": {
           "type": "variant_picker",
@@ -35,8 +33,7 @@
         },
         "quantity_selector": {
           "type": "quantity_selector",
-          "settings": {
-          }
+          "settings": {}
         },
         "buy_buttons": {
           "type": "buy_buttons",
@@ -47,8 +44,7 @@
         },
         "description": {
           "type": "description",
-          "settings": {
-          }
+          "settings": {}
         },
         "share": {
           "type": "share",
@@ -103,6 +99,20 @@
     },
     "1698072533b2f12865": {
       "type": "apps",
+      "blocks": {
+        "46f28195-6198-4173-871e-0554b515344f": {
+          "type": "shopify:\/\/apps\/vitals\/blocks\/product-reviews\/aeb48102-2a5a-4f39-bdbd-d8d49f4e20b8",
+          "settings": {}
+        },
+        "a5bb0ce2-c8a8-4dbd-85a3-cf9985e7c03e": {
+          "type": "shopify:\/\/apps\/vitals\/blocks\/reviews-stars\/aeb48102-2a5a-4f39-bdbd-d8d49f4e20b8",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "46f28195-6198-4173-871e-0554b515344f",
+        "a5bb0ce2-c8a8-4dbd-85a3-cf9985e7c03e"
+      ],
       "settings": {
         "include_margins": true
       }
