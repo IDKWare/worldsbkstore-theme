@@ -34,6 +34,7 @@
       "block_order": [
         "slide_nFp3at"
       ],
+      "disabled": true,
       "settings": {
         "layout": "grid",
         "slide_height": "adapt_image",
