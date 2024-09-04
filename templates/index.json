@@ -101,7 +101,7 @@
         "slide_qLPQgL": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Banner_caps_1200x600px_1_9dbf8dc6-fcc2-4e16-b39e-568aef82c52d.gif",
+            "image": "shopify:\/\/shop_images\/Banner_MATCH_1200x600px.gif",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
@@ -213,7 +213,7 @@
         "show_secondary_image": false,
         "show_vendor": false,
         "show_rating": false,
-        "enable_quick_add": false,
+        "quick_add": "none",
         "columns_mobile": "2",
         "swipe_on_mobile": false,
         "padding_top": 36,
@@ -341,7 +341,8 @@
         "template--19103624921430__dc0e5d0c-08f7-4f15-851c-2c625c23bee2-variant_picker-1": {
           "type": "variant_picker",
           "settings": {
-            "picker_type": "button"
+            "picker_type": "button",
+            "swatch_shape": "circle"
           }
         },
         "template--19103624921430__dc0e5d0c-08f7-4f15-851c-2c625c23bee2-quantity_selector-1": {
@@ -352,7 +353,8 @@
         "template--19103624921430__dc0e5d0c-08f7-4f15-851c-2c625c23bee2-buy_buttons-1": {
           "type": "buy_buttons",
           "settings": {
-            "show_dynamic_checkout": true
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
           }
         },
         "template--19103624921430__dc0e5d0c-08f7-4f15-851c-2c625c23bee2-share-1": {
@@ -550,7 +552,7 @@
         "show_secondary_image": true,
         "show_vendor": false,
         "show_rating": false,
-        "enable_quick_add": false,
+        "quick_add": "none",
         "columns_mobile": "1",
         "swipe_on_mobile": true,
         "padding_top": 36,
@@ -686,7 +688,8 @@
         "template--19103624921430__045c948e-b5a7-4529-9eba-7ae1df791144-16885545251a2b8b6b-3": {
           "type": "variant_picker",
           "settings": {
-            "picker_type": "button"
+            "picker_type": "button",
+            "swatch_shape": "circle"
           }
         },
         "template--19103624921430__045c948e-b5a7-4529-9eba-7ae1df791144-16885545251a2b8b6b-4": {
@@ -697,7 +700,8 @@
         "template--19103624921430__045c948e-b5a7-4529-9eba-7ae1df791144-16885545251a2b8b6b-5": {
           "type": "buy_buttons",
           "settings": {
-            "show_dynamic_checkout": true
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
           }
         }
       },
