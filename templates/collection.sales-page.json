@@ -45,6 +45,29 @@
         "accessibility_info": "Slideshow about our brand"
       }
     },
+    "rich_text_JAm4mQ": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_btHmK4": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>30% OFF second unit<\/strong>",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_btHmK4"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 20,
+        "padding_bottom": 0
+      }
+    },
     "70f0ca97-b726-4a57-92cf-6f7c344119df": {
       "type": "featured-product",
       "blocks": {
@@ -148,6 +171,7 @@
   },
   "order": [
     "slideshow_E3aCNL",
+    "rich_text_JAm4mQ",
     "70f0ca97-b726-4a57-92cf-6f7c344119df",
     "product-grid",
     "banner"
