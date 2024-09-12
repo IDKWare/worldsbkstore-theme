@@ -15,7 +15,7 @@
         "slide_nFp3at": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Banner_SuperpoleDays_D3_1200x600px.gif",
+            "image": "shopify:\/\/shop_images\/Banner_SuperpoleDays_D4_1200x600px_97d9f5f3-6f54-479f-87a4-8b67361dc9e0.gif",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
@@ -59,6 +59,7 @@
       "block_order": [
         "heading_btHmK4"
       ],
+      "disabled": true,
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
