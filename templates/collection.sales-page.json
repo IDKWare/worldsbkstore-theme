@@ -51,7 +51,7 @@
         "heading_btHmK4": {
           "type": "heading",
           "settings": {
-            "heading": "<strong>SBK CAPS 40% OFF - Only 24 hours<\/strong>",
+            "heading": "<strong>Add your SBK t-shirt and SBK hoodie at the cart and get a 30% OFF<\/strong>",
             "heading_size": "h2"
           }
         }
@@ -59,7 +59,6 @@
       "block_order": [
         "heading_btHmK4"
       ],
-      "disabled": true,
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
