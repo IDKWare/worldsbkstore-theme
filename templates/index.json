@@ -101,7 +101,7 @@
         "slide_qLPQgL": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Banner_SuperpoleDays_D10_1200x600px.gif",
+            "image": "shopify:\/\/shop_images\/Banner_caps_1200x600px_1_9dbf8dc6-fcc2-4e16-b39e-568aef82c52d.gif",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
@@ -200,9 +200,9 @@
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "sales",
-        "products_to_show": 3,
-        "columns_desktop": 3,
+        "collection": "caps",
+        "products_to_show": 4,
+        "columns_desktop": 4,
         "full_width": false,
         "show_view_all": true,
         "view_all_style": "solid",
