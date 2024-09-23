@@ -81,7 +81,6 @@
       "blocks": {
         "slide_GPkWdT": {
           "type": "slide",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/DM_SB_poster_riders_1200x600px_1.png",
             "heading": "",
@@ -100,6 +99,7 @@
         },
         "slide_qLPQgL": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Banner_caps_1200x600px_1_9dbf8dc6-fcc2-4e16-b39e-568aef82c52d.gif",
             "heading": "",
