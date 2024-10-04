@@ -15,7 +15,7 @@
         "slide_nFp3at": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Banner_SuperpoleDays_D10_1200x600px_a3767ccb-1301-4ba6-af21-6f90d66bc8f3.gif",
+            "image": "shopify://shop_images/Banner_Hoodie_season_1200x600px.gif",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
@@ -34,7 +34,6 @@
       "block_order": [
         "slide_nFp3at"
       ],
-      "disabled": true,
       "settings": {
         "layout": "grid",
         "slide_height": "adapt_image",
@@ -52,7 +51,7 @@
         "heading_btHmK4": {
           "type": "heading",
           "settings": {
-            "heading": "<strong>Add your SBK t-shirt and SBK hoodie at the cart for a 30% OFF<\/strong>",
+            "heading": "<strong>Add your SBK t-shirt and SBK hoodie at the cart for a 30% OFF</strong>",
             "heading_size": "h2"
           }
         }
