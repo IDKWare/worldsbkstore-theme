@@ -13,12 +13,5 @@
     "market": "uk"
   },
   "sections": {
-    "featured_collection_ypghmy": {
-      "settings": {
-        "collection": "sales"
-      },
-      "blocks": {
-      }
-    }
   }
 }

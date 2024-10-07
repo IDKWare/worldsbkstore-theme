@@ -13,12 +13,5 @@
     "market": "spain"
   },
   "sections": {
-    "featured_collection_ypghmy": {
-      "settings": {
-        "collection": "sales"
-      },
-      "blocks": {
-      }
-    }
   }
 }
