@@ -82,7 +82,7 @@
         "slide_GPkWdT": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Banner_Hoodie_season_1200x600px_4b212531-7900-4d40-8b76-fac30c2da8ef.gif",
+            "image": "shopify://shop_images/Banner_caps_1200x600px_8cc368ce-4577-42a6-a6e9-6627f0a0d3f7.gif",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
@@ -200,7 +200,7 @@
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "sales",
+        "collection": "caps",
         "products_to_show": 4,
         "columns_desktop": 4,
         "full_width": false,
