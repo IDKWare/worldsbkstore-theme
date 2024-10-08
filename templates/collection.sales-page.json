@@ -34,6 +34,43 @@
       "block_order": [
         "slide_nFp3at"
       ],
+      "disabled": true,
+      "settings": {
+        "layout": "grid",
+        "slide_height": "adapt_image",
+        "slider_visual": "counter",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": false,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
+    "slideshow_3R66bF": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_x4wba4": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/prova-2.gif",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "slide_x4wba4"
+      ],
       "settings": {
         "layout": "grid",
         "slide_height": "adapt_image",
@@ -172,6 +209,7 @@
   },
   "order": [
     "slideshow_E3aCNL",
+    "slideshow_3R66bF",
     "rich_text_JAm4mQ",
     "70f0ca97-b726-4a57-92cf-6f7c344119df",
     "product-grid",
