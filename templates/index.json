@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "52dd3353-370e-4164-a215-1b04a7bae97f": {
@@ -82,7 +82,7 @@
         "slide_GPkWdT": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Banner_caps_1200x600px_8cc368ce-4577-42a6-a6e9-6627f0a0d3f7.gif",
+            "image": "shopify://shop_images/Banner_last_round_1200x600px.png",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
@@ -200,7 +200,7 @@
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "caps",
+        "collection": "riders",
         "products_to_show": 4,
         "columns_desktop": 4,
         "full_width": false,
