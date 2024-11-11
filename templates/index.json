@@ -81,6 +81,7 @@
       "blocks": {
         "slide_GPkWdT": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/DM_SB_MYSTERY_BOX_1200x600_c3fc042c-fae0-410c-9d5d-92fed00cb757.png",
             "heading": "",
@@ -99,7 +100,6 @@
         },
         "slide_qLPQgL": {
           "type": "slide",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Banner_caps_1200x600px_1_9dbf8dc6-fcc2-4e16-b39e-568aef82c52d.gif",
             "heading": "",
@@ -200,7 +200,7 @@
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "mystery-box",
+        "collection": "caps",
         "products_to_show": 4,
         "columns_desktop": 4,
         "full_width": false,
@@ -335,8 +335,7 @@
         },
         "template--19103624921430__dc0e5d0c-08f7-4f15-851c-2c625c23bee2-price-1": {
           "type": "price",
-          "settings": {
-          }
+          "settings": {}
         },
         "template--19103624921430__dc0e5d0c-08f7-4f15-851c-2c625c23bee2-variant_picker-1": {
           "type": "variant_picker",
@@ -347,8 +346,7 @@
         },
         "template--19103624921430__dc0e5d0c-08f7-4f15-851c-2c625c23bee2-quantity_selector-1": {
           "type": "quantity_selector",
-          "settings": {
-          }
+          "settings": {}
         },
         "template--19103624921430__dc0e5d0c-08f7-4f15-851c-2c625c23bee2-buy_buttons-1": {
           "type": "buy_buttons",
@@ -682,8 +680,7 @@
         },
         "template--19103624921430__045c948e-b5a7-4529-9eba-7ae1df791144-16885545251a2b8b6b-2": {
           "type": "price",
-          "settings": {
-          }
+          "settings": {}
         },
         "template--19103624921430__045c948e-b5a7-4529-9eba-7ae1df791144-16885545251a2b8b6b-3": {
           "type": "variant_picker",
@@ -694,8 +691,7 @@
         },
         "template--19103624921430__045c948e-b5a7-4529-9eba-7ae1df791144-16885545251a2b8b6b-4": {
           "type": "quantity_selector",
-          "settings": {
-          }
+          "settings": {}
         },
         "template--19103624921430__045c948e-b5a7-4529-9eba-7ae1df791144-16885545251a2b8b6b-5": {
           "type": "buy_buttons",
