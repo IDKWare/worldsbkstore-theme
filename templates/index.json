@@ -82,17 +82,17 @@
         "slide_GPkWdT": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/66deb5bf241206e6e706d415.png",
-            "heading": "<strong>IT'S WARM UP TIME!</strong>",
+            "image": "shopify://shop_images/Banner_Black_friday_1200x600px.gif",
+            "heading": "",
             "heading_size": "h0",
-            "subheading": "<strong>25% OFF WITH THE CODE: GOGOGO</strong>",
-            "button_label": "BUY NOW",
-            "link": "shopify://collections/discounts-tot-sense-champions",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
             "button_style_secondary": false,
             "box_align": "middle-center",
             "show_text_box": false,
             "text_alignment": "center",
-            "image_overlay_opacity": 70,
+            "image_overlay_opacity": 10,
             "color_scheme": "accent-1",
             "text_alignment_mobile": "center"
           }
