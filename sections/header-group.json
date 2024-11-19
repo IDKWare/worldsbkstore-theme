@@ -17,7 +17,7 @@
         "header-menu span {font-weight: bold;}",
         ".header__menu-item:hover {color: #e31513;}",
         "#HeaderMenu-sbk,#HeaderMenu-skull-rider {font-weight: bold;}",
-        "#HeaderMenu-sales {font-weight: bold; color: #e31513;}"
+        "#HeaderMenu-black-friday {font-weight: bold; color: #e31513;}"
       ],
       "settings": {
         "logo_position": "top-center",
