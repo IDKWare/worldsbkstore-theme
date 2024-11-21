@@ -79,6 +79,24 @@
     "df682f7c-16f8-491e-866a-780b262c39cb": {
       "type": "slideshow",
       "blocks": {
+        "slide_YmyK67": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Banner_Backfrinday_teams_week_1200x600px.gif",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-1",
+            "text_alignment_mobile": "center"
+          }
+        },
         "slide_GPkWdT": {
           "type": "slide",
           "settings": {
@@ -102,25 +120,6 @@
           "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Banner_caps_1200x600px_1_9dbf8dc6-fcc2-4e16-b39e-568aef82c52d.gif",
-            "heading": "",
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": false,
-            "box_align": "middle-center",
-            "show_text_box": false,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "background-1",
-            "text_alignment_mobile": "center"
-          }
-        },
-        "slide_E6ipkM": {
-          "type": "slide",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/DM_DuthRound_1200x600_fb737c9e-a23f-4aa7-b53c-8a3b571eb2af.png",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
@@ -175,9 +174,9 @@
         }
       },
       "block_order": [
+        "slide_YmyK67",
         "slide_GPkWdT",
         "slide_qLPQgL",
-        "slide_E6ipkM",
         "9499e6ca-576f-4aa5-979b-8adba7ba22c1",
         "slide_RM7JLw"
       ],
