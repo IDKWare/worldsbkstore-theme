@@ -82,7 +82,7 @@
         "slide_GPkWdT": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Banner_Backfrinday_teams_week_1200x600px.gif",
+            "image": "shopify://shop_images/WorldSBK_STATIC_20off_1920x1080_344243be-30df-462a-a7c1-3911c63f4652.jpg",
             "heading": "",
             "heading_size": "h0",
             "subheading": "",
@@ -192,8 +192,78 @@
         "accessibility_info": ""
       }
     },
+    "dc0e5d0c-08f7-4f15-851c-2c625c23bee2": {
+      "type": "featured-product",
+      "blocks": {
+        "template--19103624921430__dc0e5d0c-08f7-4f15-851c-2c625c23bee2-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "template--19103624921430__dc0e5d0c-08f7-4f15-851c-2c625c23bee2-title-1": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "template--19103624921430__dc0e5d0c-08f7-4f15-851c-2c625c23bee2-price-1": {
+          "type": "price",
+          "settings": {}
+        },
+        "template--19103624921430__dc0e5d0c-08f7-4f15-851c-2c625c23bee2-variant_picker-1": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "template--19103624921430__dc0e5d0c-08f7-4f15-851c-2c625c23bee2-quantity_selector-1": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "template--19103624921430__dc0e5d0c-08f7-4f15-851c-2c625c23bee2-buy_buttons-1": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "template--19103624921430__dc0e5d0c-08f7-4f15-851c-2c625c23bee2-share-1": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "template--19103624921430__dc0e5d0c-08f7-4f15-851c-2c625c23bee2-text-1",
+        "template--19103624921430__dc0e5d0c-08f7-4f15-851c-2c625c23bee2-title-1",
+        "template--19103624921430__dc0e5d0c-08f7-4f15-851c-2c625c23bee2-price-1",
+        "template--19103624921430__dc0e5d0c-08f7-4f15-851c-2c625c23bee2-variant_picker-1",
+        "template--19103624921430__dc0e5d0c-08f7-4f15-851c-2c625c23bee2-quantity_selector-1",
+        "template--19103624921430__dc0e5d0c-08f7-4f15-851c-2c625c23bee2-buy_buttons-1",
+        "template--19103624921430__dc0e5d0c-08f7-4f15-851c-2c625c23bee2-share-1"
+      ],
+      "settings": {
+        "product": "worldsbk-official-yearbook-2024",
+        "color_scheme": "background-1",
+        "secondary_background": false,
+        "media_size": "small",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "featured_collection_93hrCH": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "title": "",
         "heading_size": "h1",
@@ -315,76 +385,6 @@
         "swipe_on_mobile": false,
         "padding_top": 0,
         "padding_bottom": 40
-      }
-    },
-    "dc0e5d0c-08f7-4f15-851c-2c625c23bee2": {
-      "type": "featured-product",
-      "blocks": {
-        "template--19103624921430__dc0e5d0c-08f7-4f15-851c-2c625c23bee2-text-1": {
-          "type": "text",
-          "settings": {
-            "text": "{{ section.settings.product.vendor }}",
-            "text_style": "uppercase"
-          }
-        },
-        "template--19103624921430__dc0e5d0c-08f7-4f15-851c-2c625c23bee2-title-1": {
-          "type": "title",
-          "settings": {
-            "heading_size": "h1"
-          }
-        },
-        "template--19103624921430__dc0e5d0c-08f7-4f15-851c-2c625c23bee2-price-1": {
-          "type": "price",
-          "settings": {}
-        },
-        "template--19103624921430__dc0e5d0c-08f7-4f15-851c-2c625c23bee2-variant_picker-1": {
-          "type": "variant_picker",
-          "settings": {
-            "picker_type": "button",
-            "swatch_shape": "circle"
-          }
-        },
-        "template--19103624921430__dc0e5d0c-08f7-4f15-851c-2c625c23bee2-quantity_selector-1": {
-          "type": "quantity_selector",
-          "settings": {}
-        },
-        "template--19103624921430__dc0e5d0c-08f7-4f15-851c-2c625c23bee2-buy_buttons-1": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": true,
-            "show_gift_card_recipient": true
-          }
-        },
-        "template--19103624921430__dc0e5d0c-08f7-4f15-851c-2c625c23bee2-share-1": {
-          "type": "share",
-          "settings": {
-            "share_label": "Share"
-          }
-        }
-      },
-      "block_order": [
-        "template--19103624921430__dc0e5d0c-08f7-4f15-851c-2c625c23bee2-text-1",
-        "template--19103624921430__dc0e5d0c-08f7-4f15-851c-2c625c23bee2-title-1",
-        "template--19103624921430__dc0e5d0c-08f7-4f15-851c-2c625c23bee2-price-1",
-        "template--19103624921430__dc0e5d0c-08f7-4f15-851c-2c625c23bee2-variant_picker-1",
-        "template--19103624921430__dc0e5d0c-08f7-4f15-851c-2c625c23bee2-quantity_selector-1",
-        "template--19103624921430__dc0e5d0c-08f7-4f15-851c-2c625c23bee2-buy_buttons-1",
-        "template--19103624921430__dc0e5d0c-08f7-4f15-851c-2c625c23bee2-share-1"
-      ],
-      "disabled": true,
-      "settings": {
-        "product": "catalunya-round-official-signed-poster-2024",
-        "color_scheme": "background-2",
-        "secondary_background": false,
-        "media_size": "small",
-        "constrain_to_viewport": true,
-        "media_fit": "contain",
-        "media_position": "left",
-        "image_zoom": "lightbox",
-        "hide_variants": false,
-        "enable_video_looping": false,
-        "padding_top": 36,
-        "padding_bottom": 36
       }
     },
     "rich_text_WEGfzT": {
@@ -757,10 +757,10 @@
     "52dd3353-370e-4164-a215-1b04a7bae97f",
     "cb010894-707f-4e68-9564-ce5bc1c0d3b7",
     "df682f7c-16f8-491e-866a-780b262c39cb",
+    "dc0e5d0c-08f7-4f15-851c-2c625c23bee2",
     "featured_collection_93hrCH",
     "5d6c961d-f1f9-4a16-a93c-a8a1ee56897f",
     "cabef38c-02f0-41fb-a0c9-9d4cdcf882ed",
-    "dc0e5d0c-08f7-4f15-851c-2c625c23bee2",
     "rich_text_WEGfzT",
     "aa23b800-9dc2-4c6b-8fec-8b6c9ad6d313",
     "ab4bf521-5988-4f2f-b857-32926e307d59",
