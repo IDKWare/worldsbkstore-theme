@@ -79,24 +79,6 @@
     "df682f7c-16f8-491e-866a-780b262c39cb": {
       "type": "slideshow",
       "blocks": {
-        "slide_YmyK67": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/Banner_Backfrinday_flashdays_05_1200x600px_1.gif",
-            "heading": "",
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": false,
-            "box_align": "middle-center",
-            "show_text_box": false,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "scheme-1",
-            "text_alignment_mobile": "center"
-          }
-        },
         "slide_GPkWdT": {
           "type": "slide",
           "settings": {
@@ -171,14 +153,32 @@
             "color_scheme": "inverse",
             "text_alignment_mobile": "center"
           }
+        },
+        "slide_6JV9iG": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Banner_Backfrinday_flashdays_06_1200x600px.gif",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-1",
+            "text_alignment_mobile": "center"
+          }
         }
       },
       "block_order": [
-        "slide_YmyK67",
         "slide_GPkWdT",
         "slide_qLPQgL",
         "9499e6ca-576f-4aa5-979b-8adba7ba22c1",
-        "slide_RM7JLw"
+        "slide_RM7JLw",
+        "slide_6JV9iG"
       ],
       "settings": {
         "layout": "grid",
