@@ -81,6 +81,7 @@
       "blocks": {
         "slide_6JV9iG": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Banner_Backfrinday_flashdays_09_1200x600px.gif",
             "heading": "",
