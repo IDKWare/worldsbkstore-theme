@@ -194,6 +194,7 @@
     },
     "featured_collection_93hrCH": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "title": "",
         "heading_size": "h1",
