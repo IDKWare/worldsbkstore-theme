@@ -141,32 +141,38 @@
         }
       }
     },
-    "content_for_index": [
-
-    ],
+    "content_for_index": [],
     "blocks": {
       "4571859552318407796": {
         "type": "shopify://apps/glo-color-swatch-variant-image/blocks/app-embed-block/4394f710-096c-4021-bbde-8ebb26057c11",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       },
       "5134484470793087125": {
         "type": "shopify://apps/vitals/blocks/app-embed/aeb48102-2a5a-4f39-bdbd-d8d49f4e20b8",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       },
       "4677439793077996495": {
         "type": "shopify://apps/pixee-multi-facebook-pixels/blocks/facebook-pixel/61bbb1d9-d4be-4d08-879a-ee3ccb59f558",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       },
       "9513407616245537438": {
         "type": "shopify://apps/sami-wholesale/blocks/app-embed-block/799b9db0-2c2b-4b20-8675-98acd123fbb2",
         "disabled": false,
+        "settings": {}
+      },
+      "7584948915495707528": {
+        "type": "shopify://apps/joy-loyalty-program/blocks/app-embed/555c55c9-9a3d-4fe0-a7a8-2c256984a371",
+        "disabled": false,
+        "settings": {}
+      },
+      "18208872656243357035": {
+        "type": "shopify://apps/joy-loyalty-program/blocks/joy-points-calculator-embed/555c55c9-9a3d-4fe0-a7a8-2c256984a371",
+        "disabled": false,
         "settings": {
+          "points_calculator_alignment": "left"
         }
       }
     },
@@ -432,8 +438,6 @@
     }
   },
   "platform_customizations": {
-    "custom_css": [
-
-    ]
+    "custom_css": []
   }
 }
