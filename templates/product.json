@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -28,12 +37,19 @@
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
-            "picker_type": "button"
+            "picker_type": "button",
+            "swatch_shape": "circle"
           }
         },
         "quantity_selector": {
           "type": "quantity_selector",
           "settings": {}
+        },
+        "joy_loyalty_program_joy_points_calculator_block_KPAekR": {
+          "type": "shopify://apps/joy-loyalty-program/blocks/joy-points-calculator-block/555c55c9-9a3d-4fe0-a7a8-2c256984a371",
+          "settings": {
+            "points_calculator_alignment": "left"
+          }
         },
         "buy_buttons": {
           "type": "buy_buttons",
@@ -60,12 +76,14 @@
         "price",
         "variant_picker",
         "quantity_selector",
+        "joy_loyalty_program_joy_points_calculator_block_KPAekR",
         "buy_buttons",
         "description",
         "share"
       ],
       "settings": {
         "enable_sticky_info": true,
+        "color_scheme": "",
         "media_size": "large",
         "constrain_to_viewport": true,
         "media_fit": "contain",
@@ -101,11 +119,11 @@
       "type": "apps",
       "blocks": {
         "46f28195-6198-4173-871e-0554b515344f": {
-          "type": "shopify:\/\/apps\/vitals\/blocks\/product-reviews\/aeb48102-2a5a-4f39-bdbd-d8d49f4e20b8",
+          "type": "shopify://apps/vitals/blocks/product-reviews/aeb48102-2a5a-4f39-bdbd-d8d49f4e20b8",
           "settings": {}
         },
         "a5bb0ce2-c8a8-4dbd-85a3-cf9985e7c03e": {
-          "type": "shopify:\/\/apps\/vitals\/blocks\/reviews-stars\/aeb48102-2a5a-4f39-bdbd-d8d49f4e20b8",
+          "type": "shopify://apps/vitals/blocks/reviews-stars/aeb48102-2a5a-4f39-bdbd-d8d49f4e20b8",
           "settings": {}
         }
       },
