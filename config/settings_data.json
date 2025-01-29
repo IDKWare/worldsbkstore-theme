@@ -158,11 +158,6 @@
         "disabled": false,
         "settings": {}
       },
-      "9513407616245537438": {
-        "type": "shopify://apps/sami-wholesale/blocks/app-embed-block/799b9db0-2c2b-4b20-8675-98acd123fbb2",
-        "disabled": false,
-        "settings": {}
-      },
       "7584948915495707528": {
         "type": "shopify://apps/joy-loyalty-program/blocks/app-embed/555c55c9-9a3d-4fe0-a7a8-2c256984a371",
         "disabled": false,
@@ -174,6 +169,11 @@
         "settings": {
           "points_calculator_alignment": "left"
         }
+      },
+      "9513407616245537438": {
+        "type": "shopify://apps/sami-wholesale/blocks/app-embed-block/799b9db0-2c2b-4b20-8675-98acd123fbb2",
+        "disabled": true,
+        "settings": {}
       }
     },
     "color_schemes": {
