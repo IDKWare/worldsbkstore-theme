@@ -79,10 +79,10 @@
     "df682f7c-16f8-491e-866a-780b262c39cb": {
       "type": "slideshow",
       "blocks": {
-        "slide_GPkWdT": {
+        "slide_q4QaLb": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/DM_SB_gift_card_1200x600_55daefa6-4195-4b3f-ad68-e544ba1f40d2.png",
+            "image": "shopify://shop_images/Bimota_new_collection_1200x600px.gif",
             "heading": "",
             "heading_size": "h0",
             "subheading": "",
@@ -97,11 +97,10 @@
             "text_alignment_mobile": "center"
           }
         },
-        "slide_q4QaLb": {
+        "slide_GPkWdT": {
           "type": "slide",
-          "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/Bimota_new_collection_1200x600px.gif",
+            "image": "shopify://shop_images/DM_SB_gift_card_1200x600_55daefa6-4195-4b3f-ad68-e544ba1f40d2.png",
             "heading": "",
             "heading_size": "h0",
             "subheading": "",
@@ -156,8 +155,8 @@
         }
       },
       "block_order": [
-        "slide_GPkWdT",
         "slide_q4QaLb",
+        "slide_GPkWdT",
         "9499e6ca-576f-4aa5-979b-8adba7ba22c1",
         "slide_RM7JLw"
       ],
