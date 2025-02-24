@@ -82,7 +82,7 @@
         "slide_q4QaLb": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Banner_fanatic_1200x600px.jpg",
+            "image": "shopify://shop_images/Bimota_new_collection_1200x600px.gif",
             "heading": "",
             "heading_size": "h0",
             "subheading": "",
@@ -99,7 +99,6 @@
         },
         "slide_GPkWdT": {
           "type": "slide",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/DM_SB_gift_card_1200x600_55daefa6-4195-4b3f-ad68-e544ba1f40d2.png",
             "heading": "",
