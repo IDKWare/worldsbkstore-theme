@@ -82,7 +82,7 @@
         "slide_q4QaLb": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Bimota_new_collection_1200x600px.gif",
+            "image": "shopify://shop_images/DUCATI_new_collection_1200x600px.gif",
             "heading": "",
             "heading_size": "h0",
             "subheading": "",
@@ -99,6 +99,7 @@
         },
         "slide_GPkWdT": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/DM_SB_gift_card_1200x600_55daefa6-4195-4b3f-ad68-e544ba1f40d2.png",
             "heading": "",
@@ -179,7 +180,7 @@
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "bimota-by-kawasaki-racing-team",
+        "collection": "aruba-it-racing-ducati-superbike-team",
         "products_to_show": 4,
         "columns_desktop": 4,
         "full_width": false,
