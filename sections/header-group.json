@@ -18,7 +18,7 @@
         ".header__menu-item:hover {color: #e31513;}",
         "#HeaderMenu-sbk,#HeaderMenu-skull-rider {font-weight: bold;}",
         "#HeaderMenu-sales {font-weight: bold; color: #e31513;}",
-        ".header__inline-menu .link {font-size: 1.4rem !important; }"
+        ".header__inline-menu .link {font-size: 1.3rem !important;}"
       ],
       "settings": {
         "logo_position": "top-center",
