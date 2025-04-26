@@ -81,8 +81,9 @@
       "blocks": {
         "slide_q4QaLb": {
           "type": "slide",
+          "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/Banner_SuperPoleDays_D10_1200x600px_94f02002-aaf0-4b94-9231-246be7aa139e.gif",
+            "image": "shopify://shop_images/DM_CAPS_1200x600px.jpg",
             "heading": "",
             "heading_size": "h0",
             "subheading": "",
@@ -97,9 +98,26 @@
             "text_alignment_mobile": "center"
           }
         },
-        "slide_GPkWdT": {
+        "slide_mhWwPt": {
           "type": "slide",
           "disabled": true,
+          "settings": {
+            "heading": "Image slide",
+            "heading_size": "h1",
+            "subheading": "Tell your brand's story through images",
+            "button_label": "Button label",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-1",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_GPkWdT": {
+          "type": "slide",
           "settings": {
             "image": "shopify://shop_images/DM_SB_gift_card_1200x600_55daefa6-4195-4b3f-ad68-e544ba1f40d2.png",
             "heading": "",
@@ -157,6 +175,7 @@
       },
       "block_order": [
         "slide_q4QaLb",
+        "slide_mhWwPt",
         "slide_GPkWdT",
         "9499e6ca-576f-4aa5-979b-8adba7ba22c1",
         "slide_RM7JLw"
