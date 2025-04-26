@@ -199,7 +199,7 @@
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "sales",
+        "collection": "caps",
         "products_to_show": 3,
         "columns_desktop": 3,
         "full_width": false,
