@@ -149,7 +149,9 @@ variant-selects {
     --swatch-input--size: 2.8rem;
   }
 }
+/*
 .gsw-swatch-installed:not(.gsw-app-swatch-product-id-not-list) main#MainContent .product__info-container variant-selects {
   display: block !important;
 }
+*/
 /* End custom styles for Swatch display type */
