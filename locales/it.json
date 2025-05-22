@@ -496,6 +496,9 @@
       "last_name": "Cognome",
       "email": "Indirizzo email",
       "password": "Password",
+      "agreements": "Accetto l'informativa",
+      "privacy_policy": "sulla privacy",
+      "newsletter": "Sì, desidero ricevere le newsletter.",
       "submit": "Crea"
     },
     "reset_password": {

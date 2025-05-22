@@ -135,6 +135,32 @@
         {{ form.errors.messages.password }}.
       </span>
     {%- endif -%}
+    <div class="left field checkbox" style="margin-top: 1rem; margin-bottom: 1rem;">
+      <input name="customer[note][Agreements]" 
+        id="agreements" 
+        type="checkbox" 
+        value="yes"         
+        aria-required="true"
+        required="true" 
+      />
+      <label for="agreements">{{ 'customer.register.agreements' | t }} <a href="{{shop.privacy_policy.url}}">{{ 'customer.register.privacy_policy' | t }}</a></label>
+    </div>
+    {%- if form.errors contains 'note' -%}
+      <span id="RegisterForm-agreements-error" class="form__message">
+        <svg aria-hidden="true" focusable="false">
+          <use href="#icon-error" />
+        </svg>
+        {{ form.errors.translated_fields.required | capitalize }}
+      </span>
+    {%- endif -%}
+    <div class="left field checkbox" style="margin-top: 1rem; margin-bottom: 1rem;">
+      <input name="customer[note][Newsletter]" 
+        id="newsletter"
+        type="checkbox"
+        value="yes"
+      />
+      <label for="newsletter">{{ 'customer.register.newsletter' | t }}</label>
+    </div>
     <button>
       {{ 'customer.register.submit' | t }}
     </button>

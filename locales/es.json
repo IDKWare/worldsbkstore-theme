@@ -470,6 +470,9 @@
       "last_name": "Apellido",
       "email": "Correo electrónico",
       "password": "Contraseña",
+      "agreements": "Acepto la",
+      "privacy_policy": "Política de privacidad",
+      "newsletter": "Sí, me gustaría recibir boletines con noticias.",
       "submit": "Crear"
     },
     "reset_password": {

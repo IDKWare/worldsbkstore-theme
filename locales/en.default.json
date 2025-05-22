@@ -485,6 +485,9 @@
       "last_name": "Last name",
       "email": "Email",
       "password": "Password",
+      "agreements": "I agree with the",
+      "privacy_policy": "Privacy Policy",
+      "newsletter": "Yes, I would like to receive newsletters.",
       "submit": "Create"
     },
     "reset_password": {

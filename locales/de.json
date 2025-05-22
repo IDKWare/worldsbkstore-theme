@@ -457,6 +457,9 @@
       "last_name": "Nachname",
       "email": "E-Mail",
       "password": "Passwort",
+      "agreements": "Ich bin mit den Datenschutzbestimmungen",
+      "privacy_policy": "Datenschutzbestimmungen",
+      "newsletter": "Ja, ich möchte den Newsletter erhalten.",
       "submit": "Erstellen"
     },
     "reset_password": {
