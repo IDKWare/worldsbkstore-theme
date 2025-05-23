@@ -1085,6 +1085,21 @@ summary::-webkit-details-marker {
   }
 }
 
+.grid__item .grid__banner {
+  display: block;
+  height: 100%;
+  text-align: center;
+  overflow: hidden;
+  width: 100%;
+  aspect-ratio: 3/4;
+}
+.grid__item .grid__banner img {
+  flex: 1 1 auto;
+  object-fit: contain;
+  max-width: 100%;
+  height: auto;
+}
+
 /* component-media */
 .media {
   display: block;
