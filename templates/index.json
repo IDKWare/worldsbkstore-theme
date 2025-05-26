@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "52dd3353-370e-4164-a215-1b04a7bae97f": {
@@ -48,7 +48,7 @@
       ],
       "disabled": true,
       "settings": {
-        "image": "shopify:\/\/shop_images\/BMW-FlashSales-1200x600px_bb99b173-67e5-4c38-a758-3e969451b1e8.png",
+        "image": "shopify://shop_images/BMW-FlashSales-1200x600px_bb99b173-67e5-4c38-a758-3e969451b1e8.png",
         "image_overlay_opacity": 0,
         "image_height": "large",
         "desktop_content_position": "middle-center",
@@ -83,7 +83,7 @@
           "type": "slide",
           "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/DM_Aruba_Ducati_1200x600_6153c154-8965-4e38-aefb-2a5fee701600.png",
+            "image": "shopify://shop_images/DM_Aruba_Ducati_1200x600_6153c154-8965-4e38-aefb-2a5fee701600.png",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
@@ -101,7 +101,7 @@
         "slide_qLPQgL": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Banner_caps_1200x600px_1_9dbf8dc6-fcc2-4e16-b39e-568aef82c52d.gif",
+            "image": "shopify://shop_images/BMW_Motorrad_Motorsport_Collection_WorldSBK_Store.jpg",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
@@ -120,7 +120,7 @@
           "type": "slide",
           "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/DM_DuthRound_1200x600_fb737c9e-a23f-4aa7-b53c-8a3b571eb2af.png",
+            "image": "shopify://shop_images/DM_DuthRound_1200x600_fb737c9e-a23f-4aa7-b53c-8a3b571eb2af.png",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
@@ -139,12 +139,12 @@
           "type": "slide",
           "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/Banner-caps-worldsbk.jpg",
-            "heading": "<strong>WORLDSBK CAPS<\/strong>",
+            "image": "shopify://shop_images/Banner-caps-worldsbk.jpg",
+            "heading": "<strong>WORLDSBK CAPS</strong>",
             "heading_size": "h1",
             "subheading": "",
             "button_label": "GET YOURS >>",
-            "link": "shopify:\/\/collections\/caps",
+            "link": "shopify://collections/caps",
             "button_style_secondary": true,
             "box_align": "middle-center",
             "show_text_box": false,
@@ -158,12 +158,12 @@
           "type": "slide",
           "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/KRT_New_collection.jpg",
+            "image": "shopify://shop_images/KRT_New_collection.jpg",
             "heading": "KRT 2024 NEW COLLECTION",
             "heading_size": "h1",
             "subheading": "Get the official Kawasaki Racing Team 2024 collection and prepare your merch for the return of WorldSBK!",
             "button_label": "SEE COLLECTION",
-            "link": "https:\/\/worldsbkstore.com\/collections\/kawasaki-racing-team",
+            "link": "https://worldsbkstore.com/collections/kawasaki-racing-team",
             "button_style_secondary": true,
             "box_align": "middle-center",
             "show_text_box": false,
@@ -200,7 +200,7 @@
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "caps",
+        "collection": "bmw-lifestyle",
         "products_to_show": 4,
         "columns_desktop": 4,
         "full_width": false,
@@ -213,7 +213,7 @@
         "show_secondary_image": false,
         "show_vendor": false,
         "show_rating": false,
-        "enable_quick_add": false,
+        "quick_add": "none",
         "columns_mobile": "2",
         "swipe_on_mobile": false,
         "padding_top": 36,
@@ -226,7 +226,7 @@
         "template--18531747987798__5d6c961d-f1f9-4a16-a93c-a8a1ee56897f-1686731341420ac5c2-0": {
           "type": "heading",
           "settings": {
-            "heading": "<strong>Find your style<\/strong>",
+            "heading": "<strong>Find your style</strong>",
             "heading_size": "h1"
           }
         },
@@ -335,24 +335,24 @@
         },
         "template--19103624921430__dc0e5d0c-08f7-4f15-851c-2c625c23bee2-price-1": {
           "type": "price",
-          "settings": {
-          }
+          "settings": {}
         },
         "template--19103624921430__dc0e5d0c-08f7-4f15-851c-2c625c23bee2-variant_picker-1": {
           "type": "variant_picker",
           "settings": {
-            "picker_type": "button"
+            "picker_type": "button",
+            "swatch_shape": "circle"
           }
         },
         "template--19103624921430__dc0e5d0c-08f7-4f15-851c-2c625c23bee2-quantity_selector-1": {
           "type": "quantity_selector",
-          "settings": {
-          }
+          "settings": {}
         },
         "template--19103624921430__dc0e5d0c-08f7-4f15-851c-2c625c23bee2-buy_buttons-1": {
           "type": "buy_buttons",
           "settings": {
-            "show_dynamic_checkout": true
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
           }
         },
         "template--19103624921430__dc0e5d0c-08f7-4f15-851c-2c625c23bee2-share-1": {
@@ -393,7 +393,7 @@
         "heading_4LgHAE": {
           "type": "heading",
           "settings": {
-            "heading": "<strong>Teams collections<\/strong>",
+            "heading": "<strong>Teams collections</strong>",
             "heading_size": "h1"
           }
         }
@@ -463,7 +463,7 @@
         "template--19103624921430__ab4bf521-5988-4f2f-b857-32926e307d59-1688470330f3ab864e-0": {
           "type": "heading",
           "settings": {
-            "heading": "<strong>Riders collections<\/strong>",
+            "heading": "<strong>Riders collections</strong>",
             "heading_size": "h1"
           }
         },
@@ -471,7 +471,7 @@
           "type": "text",
           "disabled": true,
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
           }
         }
       },
@@ -550,7 +550,7 @@
         "show_secondary_image": true,
         "show_vendor": false,
         "show_rating": false,
-        "enable_quick_add": false,
+        "quick_add": "none",
         "columns_mobile": "1",
         "swipe_on_mobile": true,
         "padding_top": 36,
@@ -563,7 +563,7 @@
         "f3e0930b-6800-4a8a-96c7-83255a140b24": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/COLLECTIONS_PIANO.png",
+            "image": "shopify://shop_images/COLLECTIONS_PIANO.png",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
@@ -600,19 +600,19 @@
         "template--18531747987798__f2228001-711c-4ccb-a8f7-9997897ba889-1686217739e73fef01-0": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/BAU_tshirt_cap_demon.jpg"
+            "image": "shopify://shop_images/BAU_tshirt_cap_demon.jpg"
           }
         },
         "d7572ec8-5214-4044-a871-4a42ee3cac7f": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/MV5_6058.jpg"
+            "image": "shopify://shop_images/MV5_6058.jpg"
           }
         },
         "3834909b-0943-4590-b2ec-df11c99c6fa8": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/REA_Dream.jpg"
+            "image": "shopify://shop_images/REA_Dream.jpg"
           }
         }
       },
@@ -638,7 +638,7 @@
         "template--19103624921430__f5a8bed4-d004-4384-9824-e92eefbd0bc2-1688556255faaa3682-0": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/TEAMS_MOTOS.png",
+            "image": "shopify://shop_images/TEAMS_MOTOS.png",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
@@ -680,24 +680,24 @@
         },
         "template--19103624921430__045c948e-b5a7-4529-9eba-7ae1df791144-16885545251a2b8b6b-2": {
           "type": "price",
-          "settings": {
-          }
+          "settings": {}
         },
         "template--19103624921430__045c948e-b5a7-4529-9eba-7ae1df791144-16885545251a2b8b6b-3": {
           "type": "variant_picker",
           "settings": {
-            "picker_type": "button"
+            "picker_type": "button",
+            "swatch_shape": "circle"
           }
         },
         "template--19103624921430__045c948e-b5a7-4529-9eba-7ae1df791144-16885545251a2b8b6b-4": {
           "type": "quantity_selector",
-          "settings": {
-          }
+          "settings": {}
         },
         "template--19103624921430__045c948e-b5a7-4529-9eba-7ae1df791144-16885545251a2b8b6b-5": {
           "type": "buy_buttons",
           "settings": {
-            "show_dynamic_checkout": true
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
           }
         }
       },
