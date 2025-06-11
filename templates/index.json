@@ -220,6 +220,76 @@
         "padding_bottom": 36
       }
     },
+    "featured_product_3XNBNz": {
+      "type": "featured-product",
+      "blocks": {
+        "text_pVhPBT": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title_89T7TK": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "price_E3DiPY": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker_wMwyLz": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "quantity_selector_MndKi4": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons_Tb6mBQ": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "share_Jh9QHi": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "text_pVhPBT",
+        "title_89T7TK",
+        "price_E3DiPY",
+        "variant_picker_wMwyLz",
+        "quantity_selector_MndKi4",
+        "buy_buttons_Tb6mBQ",
+        "share_Jh9QHi"
+      ],
+      "name": "t:sections.featured-product.presets.name",
+      "settings": {
+        "product": "worldsbk-store-gift-card",
+        "color_scheme": "",
+        "secondary_background": false,
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "5d6c961d-f1f9-4a16-a93c-a8a1ee56897f": {
       "type": "rich-text",
       "blocks": {
@@ -758,6 +828,7 @@
     "cb010894-707f-4e68-9564-ce5bc1c0d3b7",
     "df682f7c-16f8-491e-866a-780b262c39cb",
     "featured_collection_ypghmy",
+    "featured_product_3XNBNz",
     "5d6c961d-f1f9-4a16-a93c-a8a1ee56897f",
     "cabef38c-02f0-41fb-a0c9-9d4cdcf882ed",
     "dc0e5d0c-08f7-4f15-851c-2c625c23bee2",
