@@ -101,7 +101,7 @@
         "slide_qLPQgL": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Banner_half_season_1200x600px.gif",
+            "image": "shopify://shop_images/WorldSBK_Retro_Collection.jpg",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
@@ -274,7 +274,6 @@
         "buy_buttons_Tb6mBQ",
         "share_Jh9QHi"
       ],
-      "name": "t:sections.featured-product.presets.name",
       "settings": {
         "product": "worldsbk-store-gift-card",
         "color_scheme": "",
