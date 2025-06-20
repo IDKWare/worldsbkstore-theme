@@ -101,7 +101,7 @@
         "slide_qLPQgL": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/DM_WCR_SBK_combo_1200x600px.gif",
+            "image": "shopify://shop_images/WorldSBK_Retro_Collection.jpg",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
@@ -200,7 +200,7 @@
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "riders",
+        "collection": "sbk-gear",
         "products_to_show": 4,
         "columns_desktop": 4,
         "full_width": false,
