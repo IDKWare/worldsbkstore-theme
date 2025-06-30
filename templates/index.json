@@ -101,7 +101,7 @@
         "slide_qLPQgL": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/DM_combo-1_1_totebag_1224x600px.gif",
+            "image": "shopify://shop_images/Deus_ex_Machina_WorldSBK_Store_blog_2.jpg",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
@@ -200,7 +200,7 @@
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "sbk-gear",
+        "collection": "deus-ex-machina",
         "products_to_show": 4,
         "columns_desktop": 4,
         "full_width": false,
