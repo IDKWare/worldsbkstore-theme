@@ -101,7 +101,7 @@
         "slide_qLPQgL": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Deus_ex_Machina_WorldSBK_Store_blog_2.jpg",
+            "image": "shopify://shop_images/DM_WEB_summer-sales_1224x600pxpx.jpg",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
@@ -200,7 +200,7 @@
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "deus-ex-machina",
+        "collection": "sales",
         "products_to_show": 4,
         "columns_desktop": 4,
         "full_width": false,
