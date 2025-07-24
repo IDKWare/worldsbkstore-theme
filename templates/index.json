@@ -202,7 +202,7 @@
         "description_style": "body",
         "collection": "sbk-limited-edition",
         "products_to_show": 2,
-        "columns_desktop": 4,
+        "columns_desktop": 2,
         "full_width": false,
         "show_view_all": true,
         "view_all_style": "solid",
