@@ -194,6 +194,9 @@
     },
     "featured_collection_ypghmy": {
       "type": "featured-collection",
+      "custom_css": [
+        ".collection .grid {justify-content: center;}"
+      ],
       "settings": {
         "title": "",
         "heading_size": "h1",
