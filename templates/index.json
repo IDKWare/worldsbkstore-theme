@@ -101,7 +101,7 @@
         "slide_qLPQgL": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/DM_SBK_TEAMS_RIDERS_1200x600px_1.jpg",
+            "image": "shopify://shop_images/DM_SBK_Rush_WORLD_WCR_1200x600px_fdc1f1e7-495e-40f9-b80e-baa79014e7a5.jpg",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
@@ -203,7 +203,7 @@
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "teams-all",
+        "collection": "sales",
         "products_to_show": 4,
         "columns_desktop": 4,
         "full_width": false,
