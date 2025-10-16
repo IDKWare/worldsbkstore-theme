@@ -101,7 +101,7 @@
         "slide_qLPQgL": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/DM_last_round_flash_sale_1200x600_3b8bf153-2c13-4e78-bfb5-4a430e5c5770.gif",
+            "image": "shopify://shop_images/WorldSBK_Retro_Collection.jpg",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
@@ -203,7 +203,7 @@
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "bestsellers",
+        "collection": "spirit",
         "products_to_show": 4,
         "columns_desktop": 4,
         "full_width": false,
