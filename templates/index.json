@@ -101,7 +101,7 @@
         "slide_qLPQgL": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Toprak_Champion__Tshirt_1200x628px.jpg",
+            "image": "shopify://shop_images/MysteryBox_banners.gif",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
@@ -203,7 +203,7 @@
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "2025-toprak-worldsbk-champion",
+        "collection": "mystery-box",
         "products_to_show": 4,
         "columns_desktop": 4,
         "full_width": false,
