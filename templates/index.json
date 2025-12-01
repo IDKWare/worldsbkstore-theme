@@ -48,7 +48,7 @@
       ],
       "disabled": true,
       "settings": {
-        "image": "shopify://shop_images/BackSeason_General_1920x1080_v3.png",
+        "image": "shopify://shop_images/Banner_christmas_pass_1200x600px.jpg",
         "image_overlay_opacity": 0,
         "image_height": "large",
         "desktop_content_position": "middle-center",
@@ -203,7 +203,7 @@
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "sales",
+        "collection": "sbk-gear",
         "products_to_show": 4,
         "columns_desktop": 4,
         "full_width": false,
