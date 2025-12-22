@@ -102,12 +102,12 @@
         "slide_qLPQgL": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Banner_christmas_pass_1200x600px-4.jpg",
+            "image": "shopify://shop_images/WINTER_SALES_1200X628px.jpg",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
             "button_label": "",
-            "link": "",
+            "link": "shopify://collections/sales",
             "button_style_secondary": false,
             "box_align": "middle-center",
             "show_text_box": false,
@@ -204,7 +204,7 @@
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "sbk-gear",
+        "collection": "sales",
         "products_to_show": 4,
         "columns_desktop": 4,
         "full_width": false,
@@ -279,7 +279,7 @@
         "share_Jh9QHi"
       ],
       "settings": {
-        "product": "toprak-world-champion-2025-t-shirt",
+        "product": "worldsbk-official-yearbook-2025",
         "color_scheme": "",
         "secondary_background": false,
         "media_size": "medium",
