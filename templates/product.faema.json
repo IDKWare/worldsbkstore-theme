@@ -41,10 +41,6 @@
             "swatch_shape": "circle"
           }
         },
-        "quantity_selector": {
-          "type": "quantity_selector",
-          "settings": {}
-        },
         "joy_loyalty_program_joy_points_calculator_block_KPAekR": {
           "type": "shopify://apps/joy-loyalty-program/blocks/joy-points-calculator-block/555c55c9-9a3d-4fe0-a7a8-2c256984a371",
           "settings": {
@@ -76,7 +72,6 @@
         "9c15ac26-9f7c-4bad-aa8a-33b183622b7a",
         "price",
         "variant_picker",
-        "quantity_selector",
         "joy_loyalty_program_joy_points_calculator_block_KPAekR",
         "buy_buttons",
         "description",
