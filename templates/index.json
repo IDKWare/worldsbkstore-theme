@@ -102,12 +102,12 @@
         "slide_qLPQgL": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/BW_aruba_team_launch_1200x600px.jpg",
+            "image": "shopify://shop_images/DM_COMBO_1200x600px.jpg",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
             "button_label": "",
-            "link": "shopify://collections/aruba-it-racing-ducati-superbike-team",
+            "link": "shopify://collections/teams-all",
             "button_style_secondary": true,
             "box_align": "middle-center",
             "show_text_box": false,
@@ -204,7 +204,7 @@
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "aruba-it-racing-ducati-superbike-team",
+        "collection": "teams-all",
         "products_to_show": 4,
         "columns_desktop": 4,
         "full_width": false,
