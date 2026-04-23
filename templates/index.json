@@ -102,7 +102,7 @@
         "slide_qLPQgL": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/BW_ROKIT_BMW_launch_1200x600px_2.jpg",
+            "image": "shopify://shop_images/DM_SBK_YEARBOOK_WEB.gif",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
@@ -195,6 +195,7 @@
     },
     "featured_collection_ypghmy": {
       "type": "featured-collection",
+      "disabled": true,
       "custom_css": [
         ".collection .grid {justify-content: center;}"
       ],
