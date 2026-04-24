@@ -102,7 +102,7 @@
         "slide_qLPQgL": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/DM_SBK_YEARBOOK_WEB.gif",
+            "image": "shopify://shop_images/BW_NEW_COLLECTION_RIDERS_1.gif",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
@@ -195,7 +195,6 @@
     },
     "featured_collection_ypghmy": {
       "type": "featured-collection",
-      "disabled": true,
       "custom_css": [
         ".collection .grid {justify-content: center;}"
       ],
@@ -205,7 +204,7 @@
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "bmw-motorrad-worldsbk-team",
+        "collection": "riders",
         "products_to_show": 4,
         "columns_desktop": 4,
         "full_width": false,
