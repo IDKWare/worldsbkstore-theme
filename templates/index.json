@@ -102,7 +102,7 @@
         "slide_qLPQgL": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/BW_DM_kawasaki_1200x600px_1.jpg",
+            "image": "shopify://shop_images/BW_FLASH_SALES_DAY_1.jpg",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
@@ -204,7 +204,7 @@
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "kawasaki-racing-team",
+        "collection": "t-shirts",
         "products_to_show": 4,
         "columns_desktop": 4,
         "full_width": false,
