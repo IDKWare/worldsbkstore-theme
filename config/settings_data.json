@@ -172,6 +172,11 @@
         "type": "shopify://apps/sami-wholesale/blocks/app-embed-block/799b9db0-2c2b-4b20-8675-98acd123fbb2",
         "disabled": false,
         "settings": {}
+      },
+      "9406684631269829877": {
+        "type": "shopify://apps/storelock-copyright-protection/blocks/app-embed/d3079a50-105f-485a-a218-38c1830e735c",
+        "disabled": false,
+        "settings": {}
       }
     },
     "color_schemes": {
