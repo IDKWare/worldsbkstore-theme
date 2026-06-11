@@ -102,7 +102,7 @@
         "slide_qLPQgL": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/BW_CATCH_THE_DISCOUNT_1200x610px.jpg",
+            "image": "shopify://shop_images/BW_new_riders_610x1020px.jpg",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
@@ -201,7 +201,7 @@
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "sales",
+        "collection": "new-arrivals",
         "products_to_show": 4,
         "columns_desktop": 4,
         "full_width": false,
