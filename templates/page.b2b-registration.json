@@ -32,7 +32,7 @@
             "text_alignment": "center",
             "form_alignment": "center",
             "padding_top": 64,
-            "padding_bottom": 24,
+            "padding_bottom": 64,
             "padding_right": 0,
             "padding_left": 0
           }
