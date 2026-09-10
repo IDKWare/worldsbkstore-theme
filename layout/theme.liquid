@@ -372,5 +372,79 @@
     {%- if settings.cart_type == 'drawer' -%}
       <script src="{{ 'cart-drawer.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
+    <script>
+document.addEventListener('DOMContentLoaded', function () {
+
+  const FORM_ID = '1145097';
+
+  function setupRequiredPhone() {
+    const root = document.querySelector(
+      '[data-forms-id="forms-root-' + FORM_ID + '"]'
+    );
+
+    if (!root) return false;
+
+    const formEmbed = root.querySelector('form-embed');
+    if (!formEmbed || !formEmbed.shadowRoot) return false;
+
+    const shadow = formEmbed.shadowRoot;
+
+    /* Al eliminar el teléfono adicional,
+       este será el teléfono incluido en la dirección */
+    const phone = shadow.querySelector('input[type="tel"]');
+
+    if (!phone) return false;
+
+    if (phone.dataset.whatmktRequired === '1') return true;
+
+    phone.dataset.whatmktRequired = '1';
+    phone.required = true;
+    phone.setAttribute('required', '');
+    phone.setAttribute('aria-required', 'true');
+
+    phone.addEventListener('input', function () {
+      if (this.value.trim()) {
+        this.setCustomValidity('');
+      }
+    });
+
+    const form = phone.closest('form');
+
+    if (form) {
+      form.addEventListener('submit', function (event) {
+
+        if (!phone.value.trim()) {
+          event.preventDefault();
+          event.stopImmediatePropagation();
+
+          phone.setCustomValidity('Phone number is required');
+          phone.reportValidity();
+
+          phone.focus();
+          return false;
+        }
+
+        phone.setCustomValidity('');
+      }, true);
+    }
+
+    return true;
+  }
+
+  if (setupRequiredPhone()) return;
+
+  const observer = new MutationObserver(function () {
+    if (setupRequiredPhone()) {
+      observer.disconnect();
+    }
+  });
+
+  observer.observe(document.documentElement, {
+    childList: true,
+    subtree: true
+  });
+
+});
+</script>
   </body>
 </html>
