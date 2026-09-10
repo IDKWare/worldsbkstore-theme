@@ -373,78 +373,196 @@
       <script src="{{ 'cart-drawer.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
     <script>
-document.addEventListener('DOMContentLoaded', function () {
+(function () {
 
   const FORM_ID = '1145097';
+  const MAX_TRIES = 80;
+  let tries = 0;
 
-  function setupRequiredPhone() {
-    const root = document.querySelector(
+  function findPhoneDeep(root) {
+    if (!root) return null;
+
+    const inputs = root.querySelectorAll('input');
+
+    for (const input of inputs) {
+      const data = [
+        input.type,
+        input.name,
+        input.id,
+        input.placeholder,
+        input.getAttribute('autocomplete'),
+        input.getAttribute('aria-label')
+      ].filter(Boolean).join(' ').toLowerCase();
+
+      if (
+        input.type === 'tel' ||
+        data.includes('phone') ||
+        data.includes('telephone') ||
+        data.includes('tel')
+      ) {
+        return input;
+      }
+    }
+
+    const elements = root.querySelectorAll('*');
+
+    for (const element of elements) {
+      if (element.shadowRoot) {
+        const found = findPhoneDeep(element.shadowRoot);
+        if (found) return found;
+      }
+    }
+
+    return null;
+  }
+
+  function activateRequiredPhone() {
+
+    const container = document.querySelector(
       '[data-forms-id="forms-root-' + FORM_ID + '"]'
     );
 
-    if (!root) return false;
+    if (!container) {
+      return false;
+    }
 
-    const formEmbed = root.querySelector('form-embed');
-    if (!formEmbed || !formEmbed.shadowRoot) return false;
+    const formEmbed =
+      container.querySelector('form-embed') ||
+      document.querySelector('form-embed');
+
+    if (!formEmbed || !formEmbed.shadowRoot) {
+      return false;
+    }
 
     const shadow = formEmbed.shadowRoot;
 
-    /* Al eliminar el teléfono adicional,
-       este será el teléfono incluido en la dirección */
-    const phone = shadow.querySelector('input[type="tel"]');
+    function applyRequired() {
 
-    if (!phone) return false;
+      const phone = findPhoneDeep(shadow);
 
-    if (phone.dataset.whatmktRequired === '1') return true;
-
-    phone.dataset.whatmktRequired = '1';
-    phone.required = true;
-    phone.setAttribute('required', '');
-    phone.setAttribute('aria-required', 'true');
-
-    phone.addEventListener('input', function () {
-      if (this.value.trim()) {
-        this.setCustomValidity('');
+      if (!phone) {
+        return false;
       }
-    });
 
-    const form = phone.closest('form');
+      phone.required = true;
+      phone.setAttribute('required', '');
+      phone.setAttribute('aria-required', 'true');
 
-    if (form) {
-      form.addEventListener('submit', function (event) {
+      const form = phone.closest('form') || shadow.querySelector('form');
 
-        if (!phone.value.trim()) {
-          event.preventDefault();
-          event.stopImmediatePropagation();
+      function validatePhone(event) {
 
-          phone.setCustomValidity('Phone number is required');
-          phone.reportValidity();
+        const currentPhone = findPhoneDeep(shadow);
 
-          phone.focus();
+        if (!currentPhone) return;
+
+        const value = currentPhone.value.trim();
+
+        if (!value) {
+
+          if (event) {
+            event.preventDefault();
+            event.stopPropagation();
+            event.stopImmediatePropagation();
+          }
+
+          currentPhone.setCustomValidity('Phone number is required');
+          currentPhone.setAttribute('aria-invalid', 'true');
+
+          currentPhone.reportValidity();
+          currentPhone.focus();
+
           return false;
         }
 
-        phone.setCustomValidity('');
-      }, true);
+        currentPhone.setCustomValidity('');
+        currentPhone.removeAttribute('aria-invalid');
+
+        return true;
+      }
+
+      if (!phone.dataset.requiredPhoneConfigured) {
+
+        phone.dataset.requiredPhoneConfigured = '1';
+
+        phone.addEventListener('input', function () {
+          if (this.value.trim()) {
+            this.setCustomValidity('');
+            this.removeAttribute('aria-invalid');
+          }
+        });
+      }
+
+      if (form && !form.dataset.requiredPhoneConfigured) {
+
+        form.dataset.requiredPhoneConfigured = '1';
+
+        form.addEventListener('submit', function (event) {
+          validatePhone(event);
+        }, true);
+      }
+
+      if (!shadow.__requiredPhoneClickInstalled) {
+
+        shadow.__requiredPhoneClickInstalled = true;
+
+        shadow.addEventListener('click', function (event) {
+
+          const button = event.target.closest
+            ? event.target.closest('button')
+            : null;
+
+          if (!button) return;
+
+          const type = (
+            button.getAttribute('type') ||
+            button.type ||
+            ''
+          ).toLowerCase();
+
+          if (type === 'submit') {
+            validatePhone(event);
+          }
+
+        }, true);
+      }
+
+      return true;
     }
+
+    applyRequired();
+
+    /*
+      Shopify puede reconstruir los campos al cambiar
+      país/provincia. Volvemos a aplicar required.
+    */
+    const shadowObserver = new MutationObserver(function () {
+      applyRequired();
+    });
+
+    shadowObserver.observe(shadow, {
+      childList: true,
+      subtree: true
+    });
 
     return true;
   }
 
-  if (setupRequiredPhone()) return;
+  /*
+    Shopify Forms carga de forma asíncrona.
+    Esperamos hasta que exista realmente el Shadow DOM.
+  */
+  const timer = setInterval(function () {
 
-  const observer = new MutationObserver(function () {
-    if (setupRequiredPhone()) {
-      observer.disconnect();
+    tries++;
+
+    if (activateRequiredPhone() || tries >= MAX_TRIES) {
+      clearInterval(timer);
     }
-  });
 
-  observer.observe(document.documentElement, {
-    childList: true,
-    subtree: true
-  });
+  }, 250);
 
-});
+})();
 </script>
   </body>
 </html>
