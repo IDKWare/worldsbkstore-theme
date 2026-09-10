@@ -321,6 +321,7 @@
   </head>
 
   <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">
+
     <a
       class="skip-to-content-link button visually-hidden"
       href="#MainContent"
@@ -374,7 +375,7 @@
         addToCart: `{{ 'products.product.add_to_cart' | t }}`,
         soldOut: `{{ 'products.product.sold_out' | t }}`,
         unavailable: `{{ 'products.product.unavailable' | t }}`,
-        unavailable_with_option: `{{ 'products.product.value_unavailable' | t: option: '[value]' }}`,
+        unavailable_with_option: `{{ 'products.product.value_unavailable' | t: option_value: '[value]' }}`,
       };
 
       window.quickOrderListStrings = {
@@ -414,200 +415,460 @@
       ></script>
     {%- endif -%}
 
-    {% if template.name == 'page' and page.handle == 'b2b-registration' %}
-      <script>
-        (function () {
+    <script>
+      (function () {
 
-          const ERROR_TEXT = 'Phone number is required';
+        if (!window.location.pathname.includes('/pages/b2b-registration')) {
+          return;
+        }
 
-          function initB2BPhoneValidation() {
+        const EMBED_SELECTOR = 'shopify-forms-embed#app-embed';
+        const PHONE_SELECTOR = '#billing_address_phone';
+        const ERROR_ID = 'wm-phone-error';
+        const ERROR_TEXT = 'Phone number is required';
 
-            const embed = document.querySelector(
-              'shopify-forms-embed#app-embed'
+        window.__WM_B2B_PHONE_VALIDATION__ = '2026-09-10-v3';
+
+        function getParts() {
+
+          const embed = document.querySelector(
+            EMBED_SELECTOR
+          );
+
+          if (!embed || !embed.shadowRoot) {
+            return null;
+          }
+
+          const root = embed.shadowRoot;
+
+          const phone = root.querySelector(
+            PHONE_SELECTOR
+          );
+
+          const submit = root.querySelector(
+            'button[type="submit"]'
+          );
+
+          if (!phone) {
+            return null;
+          }
+
+          return {
+            embed,
+            root,
+            phone,
+            submit
+          };
+        }
+
+        function ensureError(root, phone) {
+
+          let error = root.querySelector(
+            '#' + ERROR_ID
+          );
+
+          if (!error) {
+
+            error = document.createElement(
+              'div'
             );
 
-            if (!embed || !embed.shadowRoot) {
-              return false;
-            }
+            error.id = ERROR_ID;
+            error.textContent = ERROR_TEXT;
 
-            const root = embed.shadowRoot;
-
-            const phone = root.querySelector(
-              '#billing_address_phone'
+            error.setAttribute(
+              'role',
+              'alert'
             );
 
-            const submit = root.querySelector(
-              'button[type="submit"]'
-            );
+            error.style.display = 'none';
+            error.style.color = '#e51c23';
+            error.style.fontSize = '14px';
+            error.style.lineHeight = '20px';
+            error.style.marginTop = '4px';
 
-            if (!phone || !submit) {
-              return false;
-            }
+            const row =
+              phone.parentElement &&
+              phone.parentElement.parentElement
+                ? phone.parentElement.parentElement
+                : phone.parentElement;
 
-            if (phone.dataset.wmRequired === '1') {
-              return true;
-            }
+            if (
+              row &&
+              row.parentElement
+            ) {
 
-            phone.dataset.wmRequired = '1';
-
-            phone.required = true;
-            phone.setAttribute('required', '');
-            phone.setAttribute('aria-required', 'true');
-
-            let error = root.querySelector(
-              '#wm-phone-error'
-            );
-
-            if (!error) {
-
-              error = document.createElement('div');
-
-              error.id = 'wm-phone-error';
-              error.textContent = ERROR_TEXT;
-
-              error.style.color = '#e51c23';
-              error.style.fontSize = '14px';
-              error.style.marginTop = '4px';
-              error.style.display = 'none';
-
-              const wrapper = phone.parentElement;
-
-              if (wrapper && wrapper.parentElement) {
-
-                wrapper.parentElement.insertBefore(
-                  error,
-                  wrapper.nextSibling
-                );
-
-              }
-            }
-
-            function clearError() {
-
-              phone.setCustomValidity('');
-
-              phone.removeAttribute(
-                'aria-invalid'
-              );
-
-              phone.style.borderColor = '';
-
-              if (error) {
-                error.style.display = 'none';
-              }
-            }
-
-            function showError() {
-
-              phone.setCustomValidity(
-                ERROR_TEXT
-              );
-
-              phone.setAttribute(
-                'aria-invalid',
-                'true'
-              );
-
-              phone.style.borderColor = '#e51c23';
-
-              if (error) {
-                error.style.display = 'block';
-              }
-            }
-
-            function validatePhone(event) {
-
-              const value = phone.value.trim();
-
-              if (!value) {
-
-                if (event) {
-
-                  event.preventDefault();
-
-                  event.stopPropagation();
-
-                  event.stopImmediatePropagation();
-
-                }
-
-                showError();
-
-                phone.focus();
-
-                phone.reportValidity();
-
-                return false;
-              }
-
-              clearError();
-
-              return true;
-            }
-
-            phone.addEventListener(
-              'input',
-              function () {
-
-                if (phone.value.trim()) {
-                  clearError();
-                }
-
-              }
-            );
-
-            submit.addEventListener(
-              'click',
-              function (event) {
-
-                validatePhone(event);
-
-              },
-              true
-            );
-
-            const form =
-              submit.closest('form') ||
-              root.querySelector('form');
-
-            if (form) {
-
-              form.addEventListener(
-                'submit',
-                function (event) {
-
-                  validatePhone(event);
-
-                },
-                true
+              row.parentElement.insertBefore(
+                error,
+                row.nextSibling
               );
 
             }
+          }
 
+          return error;
+        }
+
+        function preparePhone() {
+
+          const parts = getParts();
+
+          if (!parts) {
+            return null;
+          }
+
+          const {
+            root,
+            phone
+          } = parts;
+
+          phone.required = true;
+
+          phone.setAttribute(
+            'required',
+            ''
+          );
+
+          phone.setAttribute(
+            'aria-required',
+            'true'
+          );
+
+          ensureError(
+            root,
+            phone
+          );
+
+          return parts;
+        }
+
+        function clearError() {
+
+          const parts = getParts();
+
+          if (!parts) {
+            return;
+          }
+
+          const {
+            root,
+            phone
+          } = parts;
+
+          phone.setCustomValidity('');
+
+          phone.removeAttribute(
+            'aria-invalid'
+          );
+
+          phone.style.borderColor = '';
+          phone.style.boxShadow = '';
+
+          const error = root.querySelector(
+            '#' + ERROR_ID
+          );
+
+          if (error) {
+            error.style.display = 'none';
+          }
+        }
+
+        function showError() {
+
+          const parts = preparePhone();
+
+          if (!parts) {
+            return false;
+          }
+
+          const {
+            root,
+            phone
+          } = parts;
+
+          phone.setCustomValidity(
+            ERROR_TEXT
+          );
+
+          phone.setAttribute(
+            'aria-invalid',
+            'true'
+          );
+
+          phone.style.borderColor =
+            '#d72c0d';
+
+          phone.style.boxShadow =
+            '0 0 0 1px #d72c0d';
+
+          const error = ensureError(
+            root,
+            phone
+          );
+
+          if (error) {
+            error.style.display = 'block';
+          }
+
+          try {
+
+            phone.focus({
+              preventScroll: false
+            });
+
+          } catch (e) {
+
+            phone.focus();
+
+          }
+
+          return false;
+        }
+
+        function phoneIsValid() {
+
+          const parts = preparePhone();
+
+          if (!parts) {
             return true;
           }
 
-          let attempts = 0;
+          const value =
+            (
+              parts.phone.value ||
+              ''
+            ).trim();
 
-          const timer = setInterval(
-            function () {
+          if (value === '') {
+            return showError();
+          }
 
-              attempts++;
+          clearError();
+
+          return true;
+        }
+
+        function stopEvent(event) {
+
+          if (!event) {
+            return;
+          }
+
+          event.preventDefault();
+          event.stopPropagation();
+
+          if (
+            typeof event.stopImmediatePropagation ===
+            'function'
+          ) {
+
+            event.stopImmediatePropagation();
+
+          }
+        }
+
+        function isSubmitButtonInPath(event) {
+
+          if (
+            !event ||
+            typeof event.composedPath !==
+              'function'
+          ) {
+            return false;
+          }
+
+          return event
+            .composedPath()
+            .some(function (node) {
 
               if (
-                initB2BPhoneValidation() ||
-                attempts >= 100
+                !node ||
+                node.nodeType !== 1 ||
+                node.tagName !== 'BUTTON'
               ) {
-                clearInterval(timer);
+                return false;
               }
 
-            },
-            200
-          );
+              const type =
+                (
+                  node.getAttribute('type') ||
+                  node.type ||
+                  ''
+                ).toLowerCase();
 
-        })();
-      </script>
-    {% endif %}
+              return type === 'submit';
+
+            });
+        }
+
+        function isInsideB2BForm(event) {
+
+          if (
+            !event ||
+            typeof event.composedPath !==
+              'function'
+          ) {
+            return false;
+          }
+
+          return event
+            .composedPath()
+            .some(function (node) {
+
+              return (
+                node &&
+                node.matches &&
+                node.matches(
+                  EMBED_SELECTOR
+                )
+              );
+
+            });
+        }
+
+        document.addEventListener(
+          'click',
+          function (event) {
+
+            if (
+              !isSubmitButtonInPath(event)
+            ) {
+              return;
+            }
+
+            if (
+              !isInsideB2BForm(event)
+            ) {
+              return;
+            }
+
+            if (!phoneIsValid()) {
+
+              stopEvent(event);
+
+              requestAnimationFrame(
+                function () {
+
+                  const parts =
+                    getParts();
+
+                  if (
+                    parts &&
+                    parts.phone
+                  ) {
+
+                    try {
+
+                      parts.phone
+                        .reportValidity();
+
+                    } catch (e) {}
+
+                  }
+                }
+              );
+            }
+          },
+          true
+        );
+
+        document.addEventListener(
+          'keydown',
+          function (event) {
+
+            if (
+              event.key !== 'Enter'
+            ) {
+              return;
+            }
+
+            if (
+              !isInsideB2BForm(event)
+            ) {
+              return;
+            }
+
+            const path =
+              typeof event.composedPath ===
+              'function'
+                ? event.composedPath()
+                : [];
+
+            const inTextarea =
+              path.some(function (node) {
+
+                return (
+                  node &&
+                  node.tagName ===
+                    'TEXTAREA'
+                );
+
+              });
+
+            if (inTextarea) {
+              return;
+            }
+
+            if (!phoneIsValid()) {
+              stopEvent(event);
+            }
+
+          },
+          true
+        );
+
+        document.addEventListener(
+          'input',
+          function (event) {
+
+            if (
+              !isInsideB2BForm(event)
+            ) {
+              return;
+            }
+
+            const parts =
+              getParts();
+
+            if (!parts) {
+              return;
+            }
+
+            const path =
+              typeof event.composedPath ===
+              'function'
+                ? event.composedPath()
+                : [];
+
+            if (
+              path.includes(
+                parts.phone
+              ) &&
+              (
+                parts.phone.value ||
+                ''
+              ).trim() !== ''
+            ) {
+
+              clearError();
+
+            }
+
+          },
+          true
+        );
+
+        setInterval(
+          function () {
+
+            preparePhone();
+
+          },
+          500
+        );
+
+      })();
+    </script>
 
   </body>
 </html>
