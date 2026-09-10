@@ -61,6 +61,7 @@
         {%- endif %}
         .color-{{ scheme.id }} {
           --color-background: {{ scheme.settings.background.red }},{{ scheme.settings.background.green }},{{ scheme.settings.background.blue }};
+
         {% if scheme.settings.background_gradient != empty %}
           --gradient-background: {{ scheme.settings.background_gradient }};
         {% else %}
@@ -70,6 +71,7 @@
         {% liquid
           assign background_color = scheme.settings.background
           assign background_color_brightness = background_color | color_brightness
+
           if background_color_brightness <= 26
             assign background_color_contrast = background_color | color_lighten: 50
           elsif background_color_brightness <= 65
@@ -92,6 +94,7 @@
         --color-badge-border: {{ scheme.settings.text.red }},{{ scheme.settings.text.green }},{{ scheme.settings.text.blue }};
         --payment-terms-background-color: rgb({{ scheme.settings.background.rgb }});
       }
+
       {% endfor %}
 
       {{ scheme_classes | prepend: 'body' }} {
@@ -256,7 +259,13 @@
     {% endstyle %}
 
     {{ 'base.css' | asset_url | stylesheet_tag }}
-    <link rel="stylesheet" href="{{ 'component-cart-items.css' | asset_url }}" media="print" onload="this.media='all'">
+
+    <link
+      rel="stylesheet"
+      href="{{ 'component-cart-items.css' | asset_url }}"
+      media="print"
+      onload="this.media='all'"
+    >
 
     {%- if settings.cart_type == 'drawer' -%}
       {{ 'component-cart-drawer.css' | asset_url | stylesheet_tag }}
@@ -268,12 +277,25 @@
 
     {%- unless settings.type_body_font.system? -%}
       {% comment %}theme-check-disable AssetPreload{% endcomment %}
-      <link rel="preload" as="font" href="{{ settings.type_body_font | font_url }}" type="font/woff2" crossorigin>
+      <link
+        rel="preload"
+        as="font"
+        href="{{ settings.type_body_font | font_url }}"
+        type="font/woff2"
+        crossorigin
+      >
       {% comment %}theme-check-enable AssetPreload{% endcomment %}
     {%- endunless -%}
+
     {%- unless settings.type_header_font.system? -%}
       {% comment %}theme-check-disable AssetPreload{% endcomment %}
-      <link rel="preload" as="font" href="{{ settings.type_header_font | font_url }}" type="font/woff2" crossorigin>
+      <link
+        rel="preload"
+        as="font"
+        href="{{ settings.type_header_font | font_url }}"
+        type="font/woff2"
+        crossorigin
+      >
       {% comment %}theme-check-enable AssetPreload{% endcomment %}
     {%- endunless -%}
 
@@ -299,7 +321,10 @@
   </head>
 
   <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">
-    <a class="skip-to-content-link button visually-hidden" href="#MainContent">
+    <a
+      class="skip-to-content-link button visually-hidden"
+      href="#MainContent"
+    >
       {{ 'accessibility.skip_to_text' | t }}
     </a>
 
@@ -309,19 +334,29 @@
 
     {% sections 'header-group' %}
 
-    <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
+    <main
+      id="MainContent"
+      class="content-for-layout focus-none"
+      role="main"
+      tabindex="-1"
+    >
       {{ content_for_layout }}
     </main>
 
     {% sections 'footer-group' %}
 
     <ul hidden>
-      <li id="a11y-refresh-page-message">{{ 'accessibility.refresh_page' | t }}</li>
-      <li id="a11y-new-window-message">{{ 'accessibility.link_messages.new_window' | t }}</li>
+      <li id="a11y-refresh-page-message">
+        {{ 'accessibility.refresh_page' | t }}
+      </li>
+      <li id="a11y-new-window-message">
+        {{ 'accessibility.link_messages.new_window' | t }}
+      </li>
     </ul>
 
     <script>
       window.shopUrl = '{{ request.origin }}';
+
       window.routes = {
         cart_add_url: '{{ routes.cart_add_url }}',
         cart_change_url: '{{ routes.cart_change_url }}',
@@ -339,7 +374,7 @@
         addToCart: `{{ 'products.product.add_to_cart' | t }}`,
         soldOut: `{{ 'products.product.sold_out' | t }}`,
         unavailable: `{{ 'products.product.unavailable' | t }}`,
-        unavailable_with_option: `{{ 'products.product.value_unavailable' | t: option_value: '[value]' }}`,
+        unavailable_with_option: `{{ 'products.product.value_unavailable' | t: option: '[value]' }}`,
       };
 
       window.quickOrderListStrings = {
@@ -366,153 +401,213 @@
     </script>
 
     {%- if settings.predictive_search_enabled -%}
-      <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
+      <script
+        src="{{ 'predictive-search.js' | asset_url }}"
+        defer="defer"
+      ></script>
     {%- endif -%}
 
     {%- if settings.cart_type == 'drawer' -%}
-      <script src="{{ 'cart-drawer.js' | asset_url }}" defer="defer"></script>
+      <script
+        src="{{ 'cart-drawer.js' | asset_url }}"
+        defer="defer"
+      ></script>
     {%- endif -%}
+
     {% if template.name == 'page' and page.handle == 'b2b-registration' %}
-    <script>
-    (function () {
-      const ERROR_TEXT = 'Phone number is required';
+      <script>
+        (function () {
 
-      function findPhone(root) {
-        if (!root) return null;
+          const ERROR_TEXT = 'Phone number is required';
 
-        let phone = root.querySelector(
-          'input[type="tel"], input[autocomplete="tel"], input[name*="phone" i], input[id*="phone" i]'
-        );
+          function initB2BPhoneValidation() {
 
-        if (phone) return phone;
+            const embed = document.querySelector(
+              'shopify-forms-embed#app-embed'
+            );
 
-        for (const el of root.querySelectorAll('*')) {
-          if (el.shadowRoot) {
-            phone = findPhone(el.shadowRoot);
-            if (phone) return phone;
-          }
-        }
-
-        return null;
-      }
-
-      function configureForm(host) {
-        if (!host || !host.shadowRoot) return false;
-
-        const root = host.shadowRoot;
-
-        function applyPhoneValidation() {
-          const phone = findPhone(root);
-          if (!phone) return false;
-
-          phone.required = true;
-          phone.setAttribute('required', '');
-          phone.setAttribute('aria-required', 'true');
-
-          function validate(event) {
-            const currentPhone = findPhone(root);
-            if (!currentPhone) return true;
-
-            const empty = currentPhone.value.trim() === '';
-
-            if (empty) {
-              if (event) {
-                event.preventDefault();
-                event.stopPropagation();
-                event.stopImmediatePropagation();
-              }
-
-              currentPhone.setCustomValidity(ERROR_TEXT);
-              currentPhone.setAttribute('aria-invalid', 'true');
-              currentPhone.reportValidity();
-              currentPhone.focus();
+            if (!embed || !embed.shadowRoot) {
               return false;
             }
 
-            currentPhone.setCustomValidity('');
-            currentPhone.removeAttribute('aria-invalid');
+            const root = embed.shadowRoot;
+
+            const phone = root.querySelector(
+              '#billing_address_phone'
+            );
+
+            const submit = root.querySelector(
+              'button[type="submit"]'
+            );
+
+            if (!phone || !submit) {
+              return false;
+            }
+
+            if (phone.dataset.wmRequired === '1') {
+              return true;
+            }
+
+            phone.dataset.wmRequired = '1';
+
+            phone.required = true;
+            phone.setAttribute('required', '');
+            phone.setAttribute('aria-required', 'true');
+
+            let error = root.querySelector(
+              '#wm-phone-error'
+            );
+
+            if (!error) {
+
+              error = document.createElement('div');
+
+              error.id = 'wm-phone-error';
+              error.textContent = ERROR_TEXT;
+
+              error.style.color = '#e51c23';
+              error.style.fontSize = '14px';
+              error.style.marginTop = '4px';
+              error.style.display = 'none';
+
+              const wrapper = phone.parentElement;
+
+              if (wrapper && wrapper.parentElement) {
+
+                wrapper.parentElement.insertBefore(
+                  error,
+                  wrapper.nextSibling
+                );
+
+              }
+            }
+
+            function clearError() {
+
+              phone.setCustomValidity('');
+
+              phone.removeAttribute(
+                'aria-invalid'
+              );
+
+              phone.style.borderColor = '';
+
+              if (error) {
+                error.style.display = 'none';
+              }
+            }
+
+            function showError() {
+
+              phone.setCustomValidity(
+                ERROR_TEXT
+              );
+
+              phone.setAttribute(
+                'aria-invalid',
+                'true'
+              );
+
+              phone.style.borderColor = '#e51c23';
+
+              if (error) {
+                error.style.display = 'block';
+              }
+            }
+
+            function validatePhone(event) {
+
+              const value = phone.value.trim();
+
+              if (!value) {
+
+                if (event) {
+
+                  event.preventDefault();
+
+                  event.stopPropagation();
+
+                  event.stopImmediatePropagation();
+
+                }
+
+                showError();
+
+                phone.focus();
+
+                phone.reportValidity();
+
+                return false;
+              }
+
+              clearError();
+
+              return true;
+            }
+
+            phone.addEventListener(
+              'input',
+              function () {
+
+                if (phone.value.trim()) {
+                  clearError();
+                }
+
+              }
+            );
+
+            submit.addEventListener(
+              'click',
+              function (event) {
+
+                validatePhone(event);
+
+              },
+              true
+            );
+
+            const form =
+              submit.closest('form') ||
+              root.querySelector('form');
+
+            if (form) {
+
+              form.addEventListener(
+                'submit',
+                function (event) {
+
+                  validatePhone(event);
+
+                },
+                true
+              );
+
+            }
+
             return true;
           }
 
-          if (!phone.dataset.wmPhoneRequired) {
-            phone.dataset.wmPhoneRequired = '1';
+          let attempts = 0;
 
-            phone.addEventListener('input', function () {
-              if (this.value.trim() !== '') {
-                this.setCustomValidity('');
-                this.removeAttribute('aria-invalid');
+          const timer = setInterval(
+            function () {
+
+              attempts++;
+
+              if (
+                initB2BPhoneValidation() ||
+                attempts >= 100
+              ) {
+                clearInterval(timer);
               }
-            });
-          }
 
-          const form = phone.closest('form') || root.querySelector('form');
+            },
+            200
+          );
 
-          if (form && !form.dataset.wmPhoneRequired) {
-            form.dataset.wmPhoneRequired = '1';
-
-            form.addEventListener('submit', function (event) {
-              validate(event);
-            }, true);
-          }
-
-          if (!root.__wmPhoneClickValidation) {
-            root.__wmPhoneClickValidation = true;
-
-            root.addEventListener('click', function (event) {
-              const path = event.composedPath ? event.composedPath() : [];
-
-              const button = path.find(function (node) {
-                if (!node || node.tagName !== 'BUTTON') return false;
-
-                const type = (node.getAttribute('type') || '').toLowerCase();
-                const text = (node.textContent || '').trim().toLowerCase();
-
-                return type === 'submit' || text === 'submit';
-              });
-
-              if (!button) return;
-              validate(event);
-            }, true);
-          }
-
-          return true;
-        }
-
-        applyPhoneValidation();
-
-        if (!root.__wmPhoneObserver) {
-          root.__wmPhoneObserver = new MutationObserver(function () {
-            applyPhoneValidation();
-          });
-
-          root.__wmPhoneObserver.observe(root, {
-            childList: true,
-            subtree: true
-          });
-        }
-
-        return true;
-      }
-
-      let attempts = 0;
-      const timer = setInterval(function () {
-        attempts++;
-
-        const forms = document.querySelectorAll('form-embed');
-
-        for (const form of forms) {
-          if (configureForm(form)) {
-            clearInterval(timer);
-            return;
-          }
-        }
-
-        if (attempts >= 100) {
-          clearInterval(timer);
-        }
-      }, 200);
-    })();
-    </script>
+        })();
+      </script>
     {% endif %}
+
   </body>
 </html>
