@@ -372,197 +372,147 @@
     {%- if settings.cart_type == 'drawer' -%}
       <script src="{{ 'cart-drawer.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
+    {% if template.name == 'page' and page.handle == 'b2b-registration' %}
     <script>
-(function () {
+    (function () {
+      const ERROR_TEXT = 'Phone number is required';
 
-  const FORM_ID = '1145097';
-  const MAX_TRIES = 80;
-  let tries = 0;
+      function findPhone(root) {
+        if (!root) return null;
 
-  function findPhoneDeep(root) {
-    if (!root) return null;
+        let phone = root.querySelector(
+          'input[type="tel"], input[autocomplete="tel"], input[name*="phone" i], input[id*="phone" i]'
+        );
 
-    const inputs = root.querySelectorAll('input');
+        if (phone) return phone;
 
-    for (const input of inputs) {
-      const data = [
-        input.type,
-        input.name,
-        input.id,
-        input.placeholder,
-        input.getAttribute('autocomplete'),
-        input.getAttribute('aria-label')
-      ].filter(Boolean).join(' ').toLowerCase();
-
-      if (
-        input.type === 'tel' ||
-        data.includes('phone') ||
-        data.includes('telephone') ||
-        data.includes('tel')
-      ) {
-        return input;
-      }
-    }
-
-    const elements = root.querySelectorAll('*');
-
-    for (const element of elements) {
-      if (element.shadowRoot) {
-        const found = findPhoneDeep(element.shadowRoot);
-        if (found) return found;
-      }
-    }
-
-    return null;
-  }
-
-  function activateRequiredPhone() {
-
-    const container = document.querySelector(
-      '[data-forms-id="forms-root-' + FORM_ID + '"]'
-    );
-
-    if (!container) {
-      return false;
-    }
-
-    const formEmbed =
-      container.querySelector('form-embed') ||
-      document.querySelector('form-embed');
-
-    if (!formEmbed || !formEmbed.shadowRoot) {
-      return false;
-    }
-
-    const shadow = formEmbed.shadowRoot;
-
-    function applyRequired() {
-
-      const phone = findPhoneDeep(shadow);
-
-      if (!phone) {
-        return false;
-      }
-
-      phone.required = true;
-      phone.setAttribute('required', '');
-      phone.setAttribute('aria-required', 'true');
-
-      const form = phone.closest('form') || shadow.querySelector('form');
-
-      function validatePhone(event) {
-
-        const currentPhone = findPhoneDeep(shadow);
-
-        if (!currentPhone) return;
-
-        const value = currentPhone.value.trim();
-
-        if (!value) {
-
-          if (event) {
-            event.preventDefault();
-            event.stopPropagation();
-            event.stopImmediatePropagation();
+        for (const el of root.querySelectorAll('*')) {
+          if (el.shadowRoot) {
+            phone = findPhone(el.shadowRoot);
+            if (phone) return phone;
           }
-
-          currentPhone.setCustomValidity('Phone number is required');
-          currentPhone.setAttribute('aria-invalid', 'true');
-
-          currentPhone.reportValidity();
-          currentPhone.focus();
-
-          return false;
         }
 
-        currentPhone.setCustomValidity('');
-        currentPhone.removeAttribute('aria-invalid');
+        return null;
+      }
+
+      function configureForm(host) {
+        if (!host || !host.shadowRoot) return false;
+
+        const root = host.shadowRoot;
+
+        function applyPhoneValidation() {
+          const phone = findPhone(root);
+          if (!phone) return false;
+
+          phone.required = true;
+          phone.setAttribute('required', '');
+          phone.setAttribute('aria-required', 'true');
+
+          function validate(event) {
+            const currentPhone = findPhone(root);
+            if (!currentPhone) return true;
+
+            const empty = currentPhone.value.trim() === '';
+
+            if (empty) {
+              if (event) {
+                event.preventDefault();
+                event.stopPropagation();
+                event.stopImmediatePropagation();
+              }
+
+              currentPhone.setCustomValidity(ERROR_TEXT);
+              currentPhone.setAttribute('aria-invalid', 'true');
+              currentPhone.reportValidity();
+              currentPhone.focus();
+              return false;
+            }
+
+            currentPhone.setCustomValidity('');
+            currentPhone.removeAttribute('aria-invalid');
+            return true;
+          }
+
+          if (!phone.dataset.wmPhoneRequired) {
+            phone.dataset.wmPhoneRequired = '1';
+
+            phone.addEventListener('input', function () {
+              if (this.value.trim() !== '') {
+                this.setCustomValidity('');
+                this.removeAttribute('aria-invalid');
+              }
+            });
+          }
+
+          const form = phone.closest('form') || root.querySelector('form');
+
+          if (form && !form.dataset.wmPhoneRequired) {
+            form.dataset.wmPhoneRequired = '1';
+
+            form.addEventListener('submit', function (event) {
+              validate(event);
+            }, true);
+          }
+
+          if (!root.__wmPhoneClickValidation) {
+            root.__wmPhoneClickValidation = true;
+
+            root.addEventListener('click', function (event) {
+              const path = event.composedPath ? event.composedPath() : [];
+
+              const button = path.find(function (node) {
+                if (!node || node.tagName !== 'BUTTON') return false;
+
+                const type = (node.getAttribute('type') || '').toLowerCase();
+                const text = (node.textContent || '').trim().toLowerCase();
+
+                return type === 'submit' || text === 'submit';
+              });
+
+              if (!button) return;
+              validate(event);
+            }, true);
+          }
+
+          return true;
+        }
+
+        applyPhoneValidation();
+
+        if (!root.__wmPhoneObserver) {
+          root.__wmPhoneObserver = new MutationObserver(function () {
+            applyPhoneValidation();
+          });
+
+          root.__wmPhoneObserver.observe(root, {
+            childList: true,
+            subtree: true
+          });
+        }
 
         return true;
       }
 
-      if (!phone.dataset.requiredPhoneConfigured) {
+      let attempts = 0;
+      const timer = setInterval(function () {
+        attempts++;
 
-        phone.dataset.requiredPhoneConfigured = '1';
+        const forms = document.querySelectorAll('form-embed');
 
-        phone.addEventListener('input', function () {
-          if (this.value.trim()) {
-            this.setCustomValidity('');
-            this.removeAttribute('aria-invalid');
+        for (const form of forms) {
+          if (configureForm(form)) {
+            clearInterval(timer);
+            return;
           }
-        });
-      }
+        }
 
-      if (form && !form.dataset.requiredPhoneConfigured) {
-
-        form.dataset.requiredPhoneConfigured = '1';
-
-        form.addEventListener('submit', function (event) {
-          validatePhone(event);
-        }, true);
-      }
-
-      if (!shadow.__requiredPhoneClickInstalled) {
-
-        shadow.__requiredPhoneClickInstalled = true;
-
-        shadow.addEventListener('click', function (event) {
-
-          const button = event.target.closest
-            ? event.target.closest('button')
-            : null;
-
-          if (!button) return;
-
-          const type = (
-            button.getAttribute('type') ||
-            button.type ||
-            ''
-          ).toLowerCase();
-
-          if (type === 'submit') {
-            validatePhone(event);
-          }
-
-        }, true);
-      }
-
-      return true;
-    }
-
-    applyRequired();
-
-    /*
-      Shopify puede reconstruir los campos al cambiar
-      país/provincia. Volvemos a aplicar required.
-    */
-    const shadowObserver = new MutationObserver(function () {
-      applyRequired();
-    });
-
-    shadowObserver.observe(shadow, {
-      childList: true,
-      subtree: true
-    });
-
-    return true;
-  }
-
-  /*
-    Shopify Forms carga de forma asíncrona.
-    Esperamos hasta que exista realmente el Shadow DOM.
-  */
-  const timer = setInterval(function () {
-
-    tries++;
-
-    if (activateRequiredPhone() || tries >= MAX_TRIES) {
-      clearInterval(timer);
-    }
-
-  }, 250);
-
-})();
-</script>
+        if (attempts >= 100) {
+          clearInterval(timer);
+        }
+      }, 200);
+    })();
+    </script>
+    {% endif %}
   </body>
 </html>
