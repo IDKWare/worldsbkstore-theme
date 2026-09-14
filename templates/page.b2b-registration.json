@@ -42,9 +42,9 @@
         "forms_inline_Wx7FtW"
       ],
       "settings": {
+        "background_color": "#F7F7F5",
         "background_position": "center center",
-        "partner_logo_url": "https://cdn.shopify.com/s/files/1/0602/5569/9104/files/versio-vert.png?v=1789398376",
-        "logo_width": 180,
+        "logo_width": 160,
         "eyebrow": "B2B REGISTRATION",
         "heading": "Professional access to WorldSBK Store",
         "text": "<p>Register your company to request access to our professional catalogue and B2B commercial conditions.</p>",
@@ -55,7 +55,8 @@
         "form_text": "Complete your company details below. Applications are reviewed before B2B access is enabled.",
         "text_color": "#171717",
         "card_background": "#FFFFFF",
-        "min_height": 680
+        "min_height": 720,
+        "partner_logo_url": "https://cdn.shopify.com/s/files/1/0602/5569/9104/files/versio-vert.png?v=1789398376"
       }
     }
   },
