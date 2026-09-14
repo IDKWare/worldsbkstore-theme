@@ -11,7 +11,7 @@
     isolation: isolate;
     overflow: hidden;
     min-height: {{ section.settings.min_height }}px;
-    background: #111;
+    background: #090909;
   }
 
   .b2b-register-{{ section.id }} .b2b-register__media {
@@ -31,9 +31,7 @@
   .b2b-register-{{ section.id }} .b2b-register__media--fallback {
     position: absolute;
     inset: 0;
-    background:
-      radial-gradient(circle at 18% 18%, rgba(255,255,255,.10), transparent 34%),
-      linear-gradient(135deg, #111 0%, #242424 100%);
+    background: #090909;
   }
 
   .b2b-register-{{ section.id }}::before {
@@ -46,62 +44,67 @@
   }
 
   .b2b-register-{{ section.id }} .b2b-register__inner {
-    width: min(1440px, calc(100% - 64px));
+    width: min(1440px, calc(100% - 72px));
     margin: 0 auto;
-    padding: 72px 0;
+    padding: 56px 0 64px;
     display: grid;
     grid-template-columns: minmax(0, 1fr) minmax(460px, 620px);
-    gap: clamp(48px, 7vw, 110px);
-    align-items: center;
+    gap: clamp(64px, 7vw, 116px);
+    align-items: start;
   }
 
   .b2b-register-{{ section.id }} .b2b-register__content {
     color: var(--b2b-text);
-    max-width: 620px;
-    padding: 24px 0;
+    max-width: 650px;
+    padding: 22px 0 0;
   }
 
   .b2b-register-{{ section.id }} .b2b-register__partner {
-    margin: 0 0 40px;
+    min-height: 72px;
+    margin: 0 0 34px;
+    display: flex;
+    align-items: flex-start;
   }
 
   .b2b-register-{{ section.id }} .b2b-register__partner img {
     width: auto;
     height: auto;
     max-width: {{ section.settings.logo_width }}px;
-    max-height: 110px;
+    max-height: 118px;
     display: block;
+    object-fit: contain;
+    object-position: left top;
   }
 
   .b2b-register-{{ section.id }} .b2b-register__eyebrow {
-    margin: 0 0 16px;
-    font-size: 12px;
+    margin: 0 0 14px;
+    font-size: 11px;
     line-height: 1.4;
     font-weight: 700;
-    letter-spacing: .16em;
+    letter-spacing: .17em;
     text-transform: uppercase;
-    opacity: .78;
+    opacity: .72;
   }
 
   .b2b-register-{{ section.id }} .b2b-register__title {
     margin: 0;
-    max-width: 760px;
+    max-width: 650px;
     font-family: var(--font-heading-family);
     font-style: var(--font-heading-style);
     font-weight: var(--font-heading-weight);
-    font-size: clamp(40px, 5vw, 72px);
-    line-height: .98;
+    font-size: clamp(42px, 4.6vw, 68px);
+    line-height: 1.02;
     letter-spacing: -.025em;
     color: inherit;
   }
 
   .b2b-register-{{ section.id }} .b2b-register__text {
-    margin-top: 28px;
-    max-width: 570px;
-    font-size: 17px;
+    margin-top: 26px;
+    max-width: 560px;
+    font-size: 16px;
     line-height: 1.65;
     color: inherit;
-    opacity: .9;
+    opacity: .88;
   }
 
   .b2b-register-{{ section.id }} .b2b-register__text p {
@@ -109,7 +112,7 @@
   }
 
   .b2b-register-{{ section.id }} .b2b-register__steps {
-    margin: 38px 0 0;
+    margin: 34px 0 0;
     padding: 0;
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -118,30 +121,30 @@
   }
 
   .b2b-register-{{ section.id }} .b2b-register__step {
-    border-top: 1px solid rgba(255,255,255,.42);
-    padding-top: 14px;
+    border-top: 1px solid rgba(255,255,255,.34);
+    padding-top: 13px;
   }
 
   .b2b-register-{{ section.id }} .b2b-register__step-number {
     display: block;
     margin-bottom: 6px;
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 700;
-    letter-spacing: .08em;
-    opacity: .66;
+    letter-spacing: .09em;
+    opacity: .58;
   }
 
   .b2b-register-{{ section.id }} .b2b-register__step-text {
     display: block;
-    font-size: 14px;
-    line-height: 1.4;
+    font-size: 13px;
+    line-height: 1.45;
   }
 
   .b2b-register-{{ section.id }} .b2b-register__card {
     background: var(--b2b-card);
-    border-radius: 10px;
-    padding: clamp(26px, 3.2vw, 46px);
-    box-shadow: 0 28px 70px rgba(0,0,0,.22);
+    border-radius: 9px;
+    padding: clamp(30px, 3vw, 44px);
+    box-shadow: 0 24px 58px rgba(0,0,0,.22);
   }
 
   .b2b-register-{{ section.id }} .b2b-register__card-title {
@@ -150,15 +153,16 @@
     font-family: var(--font-heading-family);
     font-style: var(--font-heading-style);
     font-weight: var(--font-heading-weight);
-    font-size: clamp(26px, 2.3vw, 34px);
+    font-size: clamp(27px, 2.2vw, 34px);
     line-height: 1.15;
   }
 
   .b2b-register-{{ section.id }} .b2b-register__card-text {
-    margin: 0 0 24px;
-    color: rgba(32,32,32,.7);
-    font-size: 14px;
+    margin: 0 0 22px;
+    color: rgba(32,32,32,.66);
+    font-size: 13px;
     line-height: 1.55;
+    max-width: 500px;
   }
 
   .b2b-register-{{ section.id }} .b2b-register__form > * {
@@ -172,9 +176,9 @@
 
     .b2b-register-{{ section.id }} .b2b-register__inner {
       width: min(100% - 40px, 760px);
-      padding: 54px 0;
+      padding: 48px 0 54px;
       grid-template-columns: 1fr;
-      gap: 42px;
+      gap: 40px;
     }
 
     .b2b-register-{{ section.id }} .b2b-register__content {
@@ -182,19 +186,25 @@
     }
 
     .b2b-register-{{ section.id }} .b2b-register__partner {
-      margin-bottom: 30px;
+      min-height: 0;
+      margin-bottom: 26px;
     }
   }
 
   @media screen and (max-width: 749px) {
     .b2b-register-{{ section.id }} .b2b-register__inner {
       width: calc(100% - 28px);
-      padding: 36px 0;
-      gap: 30px;
+      padding: 32px 0 38px;
+      gap: 28px;
+    }
+
+    .b2b-register-{{ section.id }} .b2b-register__partner img {
+      max-width: min({{ section.settings.logo_width }}px, 190px);
+      max-height: 96px;
     }
 
     .b2b-register-{{ section.id }} .b2b-register__title {
-      font-size: clamp(36px, 11vw, 52px);
+      font-size: clamp(36px, 10.5vw, 50px);
     }
 
     .b2b-register-{{ section.id }} .b2b-register__text {
@@ -203,17 +213,17 @@
     }
 
     .b2b-register-{{ section.id }} .b2b-register__steps {
-      margin-top: 28px;
+      margin-top: 26px;
       grid-template-columns: 1fr;
-      gap: 12px;
+      gap: 11px;
     }
 
     .b2b-register-{{ section.id }} .b2b-register__step {
       display: grid;
-      grid-template-columns: 36px 1fr;
+      grid-template-columns: 34px 1fr;
       align-items: start;
       gap: 8px;
-      padding-top: 10px;
+      padding-top: 9px;
     }
 
     .b2b-register-{{ section.id }} .b2b-register__step-number {
@@ -253,9 +263,19 @@
             | image_url: width: 1000
             | image_tag:
               widths: '240, 400, 600, 800, 1000',
-              sizes: '(max-width: 749px) 180px, 260px',
+              sizes: '(max-width: 749px) 190px, 240px',
               loading: 'eager'
           }}
+        </div>
+      {%- elsif section.settings.partner_logo_url != blank -%}
+        <div class="b2b-register__partner">
+          <img
+            src="{{ section.settings.partner_logo_url | escape }}"
+            alt="Penguin Vila"
+            loading="eager"
+            width="{{ section.settings.logo_width }}"
+            height="auto"
+          >
         </div>
       {%- endif -%}
 
@@ -349,6 +369,12 @@
       "label": "Penguin Vila logo"
     },
     {
+      "type": "text",
+      "id": "partner_logo_url",
+      "label": "Penguin Vila logo URL",
+      "default": "https://cdn.shopify.com/s/files/1/0602/5569/9104/files/versio-vert.png?v=1789398376"
+    },
+    {
       "type": "range",
       "id": "logo_width",
       "min": 120,
@@ -356,7 +382,7 @@
       "step": 10,
       "unit": "px",
       "label": "Logo width",
-      "default": 240
+      "default": 190
     },
     {
       "type": "text",
@@ -426,7 +452,7 @@
       "step": 20,
       "unit": "px",
       "label": "Minimum section height",
-      "default": 800
+      "default": 760
     }
   ],
   "blocks": [
