@@ -17,8 +17,8 @@
         "padding_bottom": 28
       }
     },
-    "1788859048ae9c5342": {
-      "type": "apps",
+    "b2b_registration": {
+      "type": "b2b-registration",
       "blocks": {
         "forms_inline_Wx7FtW": {
           "type": "shopify://apps/forms/blocks/inline/8744a304-fcb1-4347-b211-bb6b4759a76a",
@@ -29,10 +29,10 @@
             "button_label_color": "#FFFFFF",
             "links_color": "#1878B9",
             "errors_color": "#E02229",
-            "text_alignment": "center",
+            "text_alignment": "left",
             "form_alignment": "center",
-            "padding_top": 64,
-            "padding_bottom": 64,
+            "padding_top": 0,
+            "padding_bottom": 0,
             "padding_right": 0,
             "padding_left": 0
           }
@@ -42,12 +42,26 @@
         "forms_inline_Wx7FtW"
       ],
       "settings": {
-        "include_margins": true
+        "background_position": "center center",
+        "overlay_color": "#000000",
+        "overlay_opacity": 55,
+        "logo_width": 240,
+        "eyebrow": "B2B REGISTRATION",
+        "heading": "Professional access to WorldSBK Store",
+        "text": "<p>Register your company to request access to our professional catalogue and B2B commercial conditions.</p>",
+        "step_1": "Complete the registration form",
+        "step_2": "We review your company details",
+        "step_3": "Your B2B access is activated",
+        "form_heading": "Business registration",
+        "form_text": "Complete your company details below. Applications are reviewed before B2B access is enabled.",
+        "text_color": "#FFFFFF",
+        "card_background": "#FFFFFF",
+        "min_height": 800
       }
     }
   },
   "order": [
     "main",
-    "1788859048ae9c5342"
+    "b2b_registration"
   ]
 }
