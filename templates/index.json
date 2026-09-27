@@ -102,7 +102,7 @@
         "slide_qLPQgL": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/DM_SUPPORT_YOUR_TEAM_610x1100px_02.jpg",
+            "image": "shopify://shop_images/BW_Nicolo_bulega.jpg",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
@@ -247,9 +247,8 @@
         "template--19103624921430__dc0e5d0c-08f7-4f15-851c-2c625c23bee2-buy_buttons-1",
         "template--19103624921430__dc0e5d0c-08f7-4f15-851c-2c625c23bee2-share-1"
       ],
-      "disabled": true,
       "settings": {
-        "product": "catalunya-round-official-signed-poster-2024",
+        "product": "nicolo-bulega-world-champion-2026-t-shirt",
         "color_scheme": "background-2",
         "secondary_background": false,
         "media_size": "small",
@@ -335,6 +334,7 @@
     },
     "featured_collection_ypghmy": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "title": "",
         "heading_size": "h1",
@@ -893,8 +893,8 @@
     "cb010894-707f-4e68-9564-ce5bc1c0d3b7",
     "df682f7c-16f8-491e-866a-780b262c39cb",
     "dc0e5d0c-08f7-4f15-851c-2c625c23bee2",
-    "featured_product_3XNBNz",
     "featured_collection_ypghmy",
+    "featured_product_3XNBNz",
     "rich_text_6pREkR",
     "featured_collection_nmPVy8",
     "5d6c961d-f1f9-4a16-a93c-a8a1ee56897f",
