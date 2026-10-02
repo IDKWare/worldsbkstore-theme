@@ -62,75 +62,6 @@
         "show_text_below": false
       }
     },
-    "dc0e5d0c-08f7-4f15-851c-2c625c23bee2": {
-      "type": "featured-product",
-      "blocks": {
-        "template--19103624921430__dc0e5d0c-08f7-4f15-851c-2c625c23bee2-text-1": {
-          "type": "text",
-          "settings": {
-            "text": "{{ section.settings.product.vendor }}",
-            "text_style": "uppercase"
-          }
-        },
-        "template--19103624921430__dc0e5d0c-08f7-4f15-851c-2c625c23bee2-title-1": {
-          "type": "title",
-          "settings": {
-            "heading_size": "h1"
-          }
-        },
-        "template--19103624921430__dc0e5d0c-08f7-4f15-851c-2c625c23bee2-price-1": {
-          "type": "price",
-          "settings": {}
-        },
-        "template--19103624921430__dc0e5d0c-08f7-4f15-851c-2c625c23bee2-variant_picker-1": {
-          "type": "variant_picker",
-          "settings": {
-            "picker_type": "button",
-            "swatch_shape": "circle"
-          }
-        },
-        "template--19103624921430__dc0e5d0c-08f7-4f15-851c-2c625c23bee2-quantity_selector-1": {
-          "type": "quantity_selector",
-          "settings": {}
-        },
-        "template--19103624921430__dc0e5d0c-08f7-4f15-851c-2c625c23bee2-buy_buttons-1": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": true,
-            "show_gift_card_recipient": true
-          }
-        },
-        "template--19103624921430__dc0e5d0c-08f7-4f15-851c-2c625c23bee2-share-1": {
-          "type": "share",
-          "settings": {
-            "share_label": "Share"
-          }
-        }
-      },
-      "block_order": [
-        "template--19103624921430__dc0e5d0c-08f7-4f15-851c-2c625c23bee2-text-1",
-        "template--19103624921430__dc0e5d0c-08f7-4f15-851c-2c625c23bee2-title-1",
-        "template--19103624921430__dc0e5d0c-08f7-4f15-851c-2c625c23bee2-price-1",
-        "template--19103624921430__dc0e5d0c-08f7-4f15-851c-2c625c23bee2-variant_picker-1",
-        "template--19103624921430__dc0e5d0c-08f7-4f15-851c-2c625c23bee2-quantity_selector-1",
-        "template--19103624921430__dc0e5d0c-08f7-4f15-851c-2c625c23bee2-buy_buttons-1",
-        "template--19103624921430__dc0e5d0c-08f7-4f15-851c-2c625c23bee2-share-1"
-      ],
-      "settings": {
-        "product": "champion-box-nicolo-bulega-2026",
-        "color_scheme": "background-2",
-        "secondary_background": false,
-        "media_size": "small",
-        "constrain_to_viewport": true,
-        "media_fit": "contain",
-        "media_position": "left",
-        "image_zoom": "lightbox",
-        "hide_variants": false,
-        "enable_video_looping": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "cb010894-707f-4e68-9564-ce5bc1c0d3b7": {
       "type": "video",
       "disabled": true,
@@ -260,6 +191,83 @@
         "image_behavior": "none",
         "show_text_below": false,
         "accessibility_info": ""
+      }
+    },
+    "dc0e5d0c-08f7-4f15-851c-2c625c23bee2": {
+      "type": "featured-product",
+      "blocks": {
+        "template--19103624921430__dc0e5d0c-08f7-4f15-851c-2c625c23bee2-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "template--19103624921430__dc0e5d0c-08f7-4f15-851c-2c625c23bee2-title-1": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "template--19103624921430__dc0e5d0c-08f7-4f15-851c-2c625c23bee2-price-1": {
+          "type": "price",
+          "settings": {}
+        },
+        "template--19103624921430__dc0e5d0c-08f7-4f15-851c-2c625c23bee2-variant_picker-1": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "text_mzH9yH": {
+          "type": "text",
+          "settings": {
+            "text": "<strong>Please note:</strong> This product will be available in approximately 10 days. Orders must be placed before October 3rd at 9:00 AM (CEST).",
+            "text_style": "body"
+          }
+        },
+        "template--19103624921430__dc0e5d0c-08f7-4f15-851c-2c625c23bee2-quantity_selector-1": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "template--19103624921430__dc0e5d0c-08f7-4f15-851c-2c625c23bee2-buy_buttons-1": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "template--19103624921430__dc0e5d0c-08f7-4f15-851c-2c625c23bee2-share-1": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "template--19103624921430__dc0e5d0c-08f7-4f15-851c-2c625c23bee2-text-1",
+        "template--19103624921430__dc0e5d0c-08f7-4f15-851c-2c625c23bee2-title-1",
+        "template--19103624921430__dc0e5d0c-08f7-4f15-851c-2c625c23bee2-price-1",
+        "template--19103624921430__dc0e5d0c-08f7-4f15-851c-2c625c23bee2-variant_picker-1",
+        "text_mzH9yH",
+        "template--19103624921430__dc0e5d0c-08f7-4f15-851c-2c625c23bee2-quantity_selector-1",
+        "template--19103624921430__dc0e5d0c-08f7-4f15-851c-2c625c23bee2-buy_buttons-1",
+        "template--19103624921430__dc0e5d0c-08f7-4f15-851c-2c625c23bee2-share-1"
+      ],
+      "settings": {
+        "product": "champion-box-nicolo-bulega-2026",
+        "color_scheme": "background-2",
+        "secondary_background": false,
+        "media_size": "small",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "8d417510-a172-4b68-8930-70b1aaf2a985": {
