@@ -102,7 +102,7 @@
         "slide_qLPQgL": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/BW_Nicolo_bulega.jpg",
+            "image": "shopify://shop_images/DM_SUPPORT_YOUR_TEAM_610x1100px_02.jpg",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
@@ -279,7 +279,7 @@
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "champion-days",
+        "collection": "teams-all",
         "products_to_show": 4,
         "columns_desktop": 4,
         "full_width": false,
