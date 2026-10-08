@@ -223,7 +223,7 @@
         "text_mzH9yH": {
           "type": "text",
           "settings": {
-            "text": "<strong>Please note:</strong> This product will be available in approximately 10 days. Orders must be placed before October 3rd at 9:00 AM (CEST).",
+            "text": "<strong>Please note:</strong> <em>This Mystery Box will include products from a randomly selected rider from the WorldSBK Store Riders Collection. The items shown in the images are examples only; the items included in your Mystery Box may vary.</em>",
             "text_style": "body"
           }
         },
@@ -255,9 +255,8 @@
         "template--19103624921430__dc0e5d0c-08f7-4f15-851c-2c625c23bee2-buy_buttons-1",
         "template--19103624921430__dc0e5d0c-08f7-4f15-851c-2c625c23bee2-share-1"
       ],
-      "disabled": true,
       "settings": {
-        "product": "champion-box-nicolo-bulega-2026",
+        "product": "rider-mystery-box",
         "color_scheme": "background-2",
         "secondary_background": false,
         "media_size": "small",
@@ -273,6 +272,7 @@
     },
     "8d417510-a172-4b68-8930-70b1aaf2a985": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "title": "",
         "heading_size": "h2",
