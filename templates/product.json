@@ -45,13 +45,6 @@
           "type": "quantity_selector",
           "settings": {}
         },
-        "text_Bna9Hy": {
-          "type": "text",
-          "settings": {
-            "text": "<strong>Please note:</strong> The T-shirt will be available within approximately 10 days",
-            "text_style": "body"
-          }
-        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -77,7 +70,6 @@
         "price",
         "variant_picker",
         "quantity_selector",
-        "text_Bna9Hy",
         "buy_buttons",
         "description",
         "share"
