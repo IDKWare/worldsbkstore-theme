@@ -223,6 +223,13 @@
         "text_mzH9yH": {
           "type": "text",
           "settings": {
+            "text": "This box will be available in approximately 10 days.",
+            "text_style": "body"
+          }
+        },
+        "text_rJxjxX": {
+          "type": "text",
+          "settings": {
             "text": "<strong>Please note:</strong> <em>This Mystery Box will include products from a randomly selected rider from the WorldSBK Store Riders Collection. The items shown in the images are examples only; the items included in your Mystery Box may vary.</em>",
             "text_style": "body"
           }
@@ -251,6 +258,7 @@
         "template--19103624921430__dc0e5d0c-08f7-4f15-851c-2c625c23bee2-price-1",
         "template--19103624921430__dc0e5d0c-08f7-4f15-851c-2c625c23bee2-variant_picker-1",
         "text_mzH9yH",
+        "text_rJxjxX",
         "template--19103624921430__dc0e5d0c-08f7-4f15-851c-2c625c23bee2-quantity_selector-1",
         "template--19103624921430__dc0e5d0c-08f7-4f15-851c-2c625c23bee2-buy_buttons-1",
         "template--19103624921430__dc0e5d0c-08f7-4f15-851c-2c625c23bee2-share-1"
