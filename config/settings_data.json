@@ -143,11 +143,6 @@
     },
     "content_for_index": [],
     "blocks": {
-      "4571859552318407796": {
-        "type": "shopify://apps/glo-color-swatch-variant-image/blocks/app-embed-block/4394f710-096c-4021-bbde-8ebb26057c11",
-        "disabled": false,
-        "settings": {}
-      },
       "5134484470793087125": {
         "type": "shopify://apps/vitals/blocks/app-embed/aeb48102-2a5a-4f39-bdbd-d8d49f4e20b8",
         "disabled": false,
@@ -177,6 +172,14 @@
         "type": "shopify://apps/storelock-copyright-protection/blocks/app-embed/d3079a50-105f-485a-a218-38c1830e735c",
         "disabled": false,
         "settings": {}
+      },
+      "4571859552318407796": {
+        "type": "shopify://apps/glo-color-swatch/blocks/app-embed-block/4394f710-096c-4021-bbde-8ebb26057c11",
+        "disabled": true,
+        "settings": {
+          "customCssGCW": "",
+          "customJsGCW": ""
+        }
       }
     },
     "color_schemes": {
