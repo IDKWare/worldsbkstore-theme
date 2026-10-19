@@ -102,7 +102,7 @@
         "slide_qLPQgL": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/MysteryBox_2200x1100px_84c4150d-c0ca-4d65-9db3-5f5471c9560d.gif",
+            "image": "shopify://shop_images/DM_SUPPORT_YOUR_TEAM_610x1100px_02.jpg",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
@@ -263,6 +263,7 @@
         "template--19103624921430__dc0e5d0c-08f7-4f15-851c-2c625c23bee2-buy_buttons-1",
         "template--19103624921430__dc0e5d0c-08f7-4f15-851c-2c625c23bee2-share-1"
       ],
+      "disabled": true,
       "settings": {
         "product": "rider-mystery-box",
         "color_scheme": "background-2",
