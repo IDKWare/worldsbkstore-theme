@@ -182,6 +182,10 @@
         "9499e6ca-576f-4aa5-979b-8adba7ba22c1",
         "slide_RM7JLw"
       ],
+      "custom_css": [
+        ".banner__box, .banner__buttons {position: static !important; background: transparent !important; box-shadow: none !important; }",
+        ".banner__buttons .button {position: absolute !important; inset: 0 !important; width: 100% !important; height: 100% !important; max-width: none !important; opacity: 0 !important; z-index: 3; }"
+      ],
       "settings": {
         "layout": "grid",
         "slide_height": "adapt_image",
