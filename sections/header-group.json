@@ -16,7 +16,8 @@
       "custom_css": [
         "header-menu span {font-weight: bold;}",
         ".header__menu-item:sale {color: #e31513;}",
-        "#HeaderMenu-sale,#HeaderMenu-skull-rider {font-weight: bold; color: #e31513}"
+        "#HeaderMenu-sale,#HeaderMenu-skull-rider {font-weight: bold; color: #e31513;}",
+        "a[href*=\"black-friday\"], a[href*=\"black-friday\"] span {font-weight: bold !important; color: #e31513 !important;}"
       ],
       "settings": {
         "logo_position": "top-center",
