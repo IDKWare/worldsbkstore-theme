@@ -183,8 +183,9 @@
         "slide_RM7JLw"
       ],
       "custom_css": [
-        ".banner__box, .banner__buttons {position: static !important; background: transparent !important; box-shadow: none !important; }",
-        ".banner__buttons .button {position: absolute !important; inset: 0 !important; width: 100% !important; height: 100% !important; max-width: none !important; opacity: 0 !important; z-index: 3; }"
+        ".banner__box,.banner__buttons {position: static !important; background: transparent !important; box-shadow: none !important;}",
+        ".banner__buttons .button {position: absolute !important; inset: 0 !important; width: 100% !important; height: 100% !important; max-width: none !important; opacity: 0 !important; z-index: 3;}",
+        ".banner__box {transform: none !important; }"
       ],
       "settings": {
         "layout": "grid",
